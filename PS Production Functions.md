@@ -4,8 +4,8 @@
 ---
 
 <h1 id="problem-set----production-functions">Problem Set – Production Functions</h1>
-<p>I posted a dataset: firms-cleaned.dta. This is data from a survey of firms in Ghana starting in the 1991. The link to the source data is: <a href="https://www.csae.ox.ac.uk/manufacturing-enterprise-surveys/regional-project-on-enterprise-development-ghana-manufacturing-enterprise-survey-rounds-i-vii-12-years-1992-2003">https://www.csae.ox.ac.uk/manufacturing-enterprise-surveys/regional-project-on-enterprise-development-ghana-manufacturing-enterprise-survey-rounds-i-vii-12-years-1992-2003</a>.</p>
-<p>When using the data, please use real values (real values are indexed to 1991 in the local currency) and use the value added measurement of output.</p>
+<p>I posted a dataset: firms-cleaned.dta. This is data from a survey of firms in Ghana starting in the 1991. An observation is a <strong>firm-year</strong>.</p>
+<p>When using the data, please use real values (real values are indexed to 1991 in the local currency) and use the value added measurement of output (variable already created), which is the value output minus the cost of materials.</p>
 <h2 id="ols">OLS</h2>
 <p><strong>(a)</strong> Estimate output elasticities, assuming a Cobb-Douglas functional form for the production function, using OLS.</p>
 <p><em>Note: Typically, the constant is not estimated in this literature. In order to do this, de-mean all of the logged variables before estimation.</em></p>
