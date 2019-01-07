@@ -57,7 +57,11 @@ GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for I
 ### Endogenous Products
 
 Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
+
+Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evidence from radio broadcasting." _The Quarterly Journal of Economics_ 116, no. 3 (2001): 1009-1025.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NjU0NzM0NSwxOTA2NDM0MDAwLDQzMj
-ExNjY0MSwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbLTcyNzM1NzQzNiwtNjQ2NTQ3MzQ1LDE5MD
+Y0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
