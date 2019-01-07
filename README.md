@@ -43,7 +43,9 @@ De Loecker, Jan, Pinelopi K. Goldberg, Amit K. Khandelwal, and Nina Pavcnik. "Pr
 Grieco, Paul LE, and Ryan C. McDevitt. "Productivity and quality in health care: Evidence from the dialysis industry." _The Review of Economic Studies_ 84, no. 3 (2016): 1071-1105.
 
 De Loecker, Jan, and Paul T. Scott. _Estimating market power Evidence from the US Brewing Industry_. No. w22957. National Bureau of Economic Research, 2016.
+
+Aw, Bee Yan, Mark J. Roberts, and Daniel Yi Xu. "R&D investment, exporting, and productivity dynamics." _American Economic Review_ 101, no. 4 (2011): 1312-44.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNTExMzE3Miw0MzIxMTY2NDEsLTExMT
+eyJoaXN0b3J5IjpbMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMT
 QxMzMwMDFdfQ==
 -->
