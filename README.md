@@ -6,12 +6,12 @@ This repository contains the readings and problems set for the Murry half (first
 
 *Please read ACF before the first day of class.* 
 
-1/14 -- Production functions: Intro, OP and LP. 
-* *Read ACF.* 
+##### 1/14 -- Production functions: Intro, OP and LP. 
+* *Read ACF* 
 
-1/16 -- ACF. 
+##### 1/16 -- ACF. 
 
-1/21 -- 
+##### 1/21 --  
 
 
 
@@ -27,5 +27,5 @@ This repository contains the readings and problems set for the Murry half (first
 
 [LP] Levinsohn, James, and Amil Petrin. "Estimating production functions using inputs to control for unobservables." The Review of Economic Studies 70.2 (2003): 317-341.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTc2NTU4OF19
+eyJoaXN0b3J5IjpbLTExMTQxMzMwMDFdfQ==
 -->
