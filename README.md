@@ -9,20 +9,20 @@ This repository contains the readings and problems set for the Murry half (first
 
 ##### 1/14 -- Production functions: Intro, OP and LP. 
 - *Read ACF* 
-
 ##### 1/16 -- ACF. 
-
-##### 1/21 -- Markups: De Loecker and Warzynski (2012) 
-
-##### 1/23 -- Work on Problem Set
+##### 1/23 -- Markups: De Loecker and Warzynski (2012) 
+##### 1/28 -- Work on Problem Set
 - Come to class with laptop having done first part of problem set. 
 
-### Endogenous Products
-##### 1/28 -- - Berry and Waldfogel (2001)
-##### 1/30 -- Eizenberg (2014)
-##### 2/4 - Ciliberto, Murry, and Tamer (2018)
+#### Endogenous Products
+##### 1/30 -- - Berry and Waldfogel (2001)
+##### 2/4 -- Eizenberg (2014)
+##### 2/6 - Ciliberto, Murry, and Tamer (2018)
+##### 2/11 -- TBA
+##### 2/13 -- TBA 
 
-
+#### Dynamics
+##### 2/18 -- 
 
 
 ## References 
@@ -79,7 +79,7 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTI1MjIxNCwtOTUzMTk3Mzc1LC02ND
+eyJoaXN0b3J5IjpbLTk5MjIyNjY1OCwtOTUzMTk3Mzc1LC02ND
 Y1NDczNDUsMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMTQxMzMw
 MDFdfQ==
 -->
