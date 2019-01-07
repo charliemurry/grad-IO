@@ -46,10 +46,13 @@ De Loecker, Jan, and Paul T. Scott. _Estimating market power Evidence from the U
 
 Aw, Bee Yan, Mark J. Roberts, and Daniel Yi Xu. "R&D investment, exporting, and productivity dynamics." _American Economic Review_ 101, no. 4 (2011): 1312-44.
 
+Pavcnik, Nina. "Trade liberalization, exit, and productivity improvements: Evidence from Chilean plants." _The Review of Economic Studies_ 69, no. 1 (2002): 245-276.
+
 Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "Patterns of firm entry and exit in US manufacturing industries." _The RAND journal of Economics_ (1988): 495-515.
 
 GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for Identification,” in Econometrics and Economic Theory in the Twentieth Century: The Ragnar Frisch Centennial Symposium, ed. by S. Strøm. Cambridge, U.K.: Cambridge University Press. [pp 2413-2421]
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzcyMzM4NCwxOTA2NDM0MDAwLDQzMj
-ExNjY0MSwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbMTI0NzMyOTExLDE5MDY0MzQwMDAsNDMyMT
+E2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
