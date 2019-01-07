@@ -24,6 +24,7 @@ This repository contains the readings and problems set for the Murry half (first
 
 ### Production Functions (note acronyms)
 
+#### Core
 [ACF] Ackerberg, Daniel A., Kevin Caves, and Garth Frazer. "Identification properties of recent production function estimators." *Econometrica* 83.6 (2015): 2411-2451.
 
 [OP] Olley, G. Steven, and Ariel Pakes. "The dynamics of productivity in the telecommunications equipment industry." *Econometrica* 64.6 (1996): 1263.
@@ -32,7 +33,8 @@ This repository contains the readings and problems set for the Murry half (first
 
 De Loecker, Jan, and Frederic Warzynski. "Markups and firm-level export status." _American economic review_ 102.6 (2012): 2437-71.
 
-
+#### Applications
+De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconomic implications." No. w23687. _National Bureau of Economic Research_, 2017.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDM2MTM5MiwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbMTUxNDAyNTgwNSwtMTExNDEzMzAwMV19
 -->
