@@ -60,8 +60,10 @@ Eizenberg, Alon. "Upstream innovation and product variety in the us home pc mark
 
 Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evidence from radio broadcasting." _The Quarterly Journal of Economics_ 116, no. 3 (2001): 1009-1025.
 
+Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
 
+Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzM1NzQzNiwtNjQ2NTQ3MzQ1LDE5MD
+eyJoaXN0b3J5IjpbLTIwNzExNTI2NCwtNjQ2NTQ3MzQ1LDE5MD
 Y0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
