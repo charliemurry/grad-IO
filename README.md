@@ -64,6 +64,8 @@ Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in r
 
 Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
 
+Wollmann, Thomas G. "Trucks without bailouts: Equilibrium product characteristics for commercial vehicles." _American Economic Review_ 108, no. 6 (2018): 1364-1406.
+
 Fan, Ying. "Ownership consolidation and product characteristics: A study of the US daily newspaper market." _American Economic Review_ 103, no. 5 (2013): 1598-1628.
 
 Ying Fan and Chenyu Yang. ["Competition, Product Proliferation and Welfare: A Study of the U.S. Smartphone Market"](http://www-personal.umich.edu/~yingfan/proliferation_smartphone.pdf),  2018, CEPR Discussion Paper DP11423.
@@ -72,6 +74,6 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDY2MzY0NSwtNjQ2NTQ3MzQ1LDE5MD
+eyJoaXN0b3J5IjpbLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MD
 Y0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
