@@ -24,7 +24,9 @@ This repository contains the readings and problems set for the Murry half (first
 ##### 2/13 -- TBA 
 
 #### Dynamics
-##### 2/18 -- Bajari, Benkard, and Levin (2009)
+##### 2/18 -- Bajari, Benkard, and Levin (2007)
+##### 2/20 -- TBA
+##### 2/25 -- Wollman (2018)
 
 
 ## References 
@@ -80,8 +82,12 @@ Ying Fan and Chenyu Yang. ["Competition, Product Proliferation and Welfare: A St
 Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous and Selective Service Choices After Airline Mergers," working paper [here](http://econweb.umd.edu/~sweeting/SWEETING_airlinemerger_july2018.pdf). 
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
+
+
+### Dynamics and Strategic Interactions
+Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODgyODE4NDQsLTk1MzE5NzM3NSwtNj
-Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
-MDAxXX0=
+eyJoaXN0b3J5IjpbLTMyMzUwODA5NSwtOTUzMTk3Mzc1LC02ND
+Y1NDczNDUsMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMTQxMzMw
+MDFdfQ==
 -->
