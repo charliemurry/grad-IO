@@ -4,21 +4,22 @@ This repository contains the readings and problems set for the Murry half (first
 
 ## Class Schedule
 
-*Please read ACF before the first day of class.* 
+#### Production Functions
+(Read ACF beore the first day of class!)
 
 ##### 1/14 -- Production functions: Intro, OP and LP. 
 - *Read ACF* 
 
 ##### 1/16 -- ACF. 
 
-##### 1/21 -- Markups 
-- De Loecker and Warzynski (2012) 
+##### 1/21 -- Markups: De Loecker and Warzynski (2012) 
 
 ##### 1/23 -- Work on Problem Set
 - Come to class with laptop having done first part of problem set. 
 
-####
+### Endogenous Products
 ##### 1/28 -- - Berry and Waldfogel (2001)
+##### 
 
 
 
@@ -77,7 +78,7 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTYzNDY5NzcsLTk1MzE5NzM3NSwtNj
+eyJoaXN0b3J5IjpbLTExMDQ2NDU2NDcsLTk1MzE5NzM3NSwtNj
 Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
 MDAxXX0=
 -->
