@@ -64,8 +64,10 @@ Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in r
 
 Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
 
-Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous and Selective Service Choices After Airline Mergers," working paper here. 
+Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous and Selective Service Choices After Airline Mergers," working paper [here](http://econweb.umd.edu/~sweeting/SWEETING_airlinemerger_july2018.pdf). 
+
+Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjUyMzE5NTUsLTY0NjU0NzM0NSwxOT
-A2NDM0MDAwLDQzMjExNjY0MSwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbODAwNzUwMDEyLC02NDY1NDczNDUsMTkwNj
+QzNDAwMCw0MzIxMTY2NDEsLTExMTQxMzMwMDFdfQ==
 -->
