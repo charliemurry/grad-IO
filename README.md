@@ -33,6 +33,8 @@ This repository contains the readings and problems set for the Murry half (first
 
 De Loecker, Jan, and Frederic Warzynski. "Markups and firm-level export status." _American economic review_ 102.6 (2012): 2437-71.
 
+Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "Patterns of firm entry and exit in US manufacturing industries." _The RAND journal of Economics_ (1988): 495-515.
+
 #### Some Applications
 De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconomic implications." No. w23687. _National Bureau of Economic Research_, 2017.
 
@@ -42,5 +44,6 @@ Grieco, Paul LE, and Ryan C. McDevitt. "Productivity and quality in health care:
 
 De Loecker, Jan, and Paul T. Scott. _Estimating market power Evidence from the US Brewing Industry_. No. w22957. National Bureau of Economic Research, 2016.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
+eyJoaXN0b3J5IjpbMTUzNTExMzE3Miw0MzIxMTY2NDEsLTExMT
+QxMzMwMDFdfQ==
 -->
