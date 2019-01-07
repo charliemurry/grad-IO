@@ -62,6 +62,8 @@ Pavcnik, Nina. "Trade liberalization, exit, and productivity improvements: Evide
 
 Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "Patterns of firm entry and exit in US manufacturing industries." _The RAND journal of Economics_ (1988): 495-515.
 
+Susanto Basu and John G. Fernald, "Returns to Scale in U.S. Production: Estimates and Implications," Journal of Political Economy 105, no. 2 (April 1997): 249-283.
+
 GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for Identification,” in Econometrics and Economic Theory in the Twentieth Century: The Ragnar Frisch Centennial Symposium, ed. by S. Strøm. Cambridge, U.K.: Cambridge University Press. [pp 2413-2421]
 
 
@@ -90,7 +92,7 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 ### Dynamics and Strategic Interactions
 Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQyMDY1MjcsLTk1MzE5NzM3NSwtNj
-Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
-MDAxXX0=
+eyJoaXN0b3J5IjpbNjkxOTU0ODc0LC0xNDQ0MjA2NTI3LC05NT
+MxOTczNzUsLTY0NjU0NzM0NSwxOTA2NDM0MDAwLDQzMjExNjY0
+MSwtMTExNDEzMzAwMV19
 -->
