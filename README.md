@@ -14,8 +14,11 @@ This repository contains the readings and problems set for the Murry half (first
 ##### 1/21 -- Markups 
 - De Loecker and Warzynski (2012) 
 
-##### 1/21 -- Work on Problem Set
+##### 1/23 -- Work on Problem Set
 - Come to class with laptop having done first part of problem set. 
+
+####
+##### 1/28 -- - Berry and Waldfogel (2001)
 
 
 
@@ -74,6 +77,7 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MD
-Y0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
+eyJoaXN0b3J5IjpbLTEwMTYzNDY5NzcsLTk1MzE5NzM3NSwtNj
+Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
+MDAxXX0=
 -->
