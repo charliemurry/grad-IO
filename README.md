@@ -3,7 +3,7 @@ This repository contains the readings and problems set for the Murry half (first
 
 Problem Set 1 is due on 2/4 @ 9am. 
 
-Problem Set 2 is 
+Problem Set 2 is due on 3/4 @ 9am. 
 
 ## Class Schedule
 
@@ -34,9 +34,9 @@ Problem Set 2 is
 
 ## References 
 
-### Production Functions (note acronyms)
+### Production Functions 
 
-##### _Core_
+##### _Core (note acronyms)_
 [ACF] Ackerberg, Daniel A., Kevin Caves, and Garth Frazer. "Identification properties of recent production function estimators." *Econometrica* 83.6 (2015): 2411-2451.
 
 [OP] Olley, G. Steven, and Ariel Pakes. "The dynamics of productivity in the telecommunications equipment industry." *Econometrica* 64.6 (1996): 1263.
@@ -90,7 +90,7 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 ### Dynamics and Strategic Interactions
 Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2ODQzMDU3LC05NTMxOTczNzUsLTY0Nj
-U0NzM0NSwxOTA2NDM0MDAwLDQzMjExNjY0MSwtMTExNDEzMzAw
-MV19
+eyJoaXN0b3J5IjpbLTE0NDQyMDY1MjcsLTk1MzE5NzM3NSwtNj
+Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
+MDAxXX0=
 -->
