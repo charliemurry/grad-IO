@@ -39,6 +39,8 @@ De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconom
 De Loecker, Jan, Pinelopi K. Goldberg, Amit K. Khandelwal, and Nina Pavcnik. "Prices, markups, and trade reform." _Econometrica_ 84, no. 2 (2016): 445-510.
 
 Grieco, Paul LE, and Ryan C. McDevitt. "Productivity and quality in health care: Evidence from the dialysis industry." _The Review of Economic Studies_ 84, no. 3 (2016): 1071-1105.
+
+De Loecker, Jan, and Paul T. Scott. _Estimating market power Evidence from the US Brewing Industry_. No. w22957. National Bureau of Economic Research, 2016.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDY2MjM3NywtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
