@@ -19,7 +19,8 @@ This repository contains the readings and problems set for the Murry half (first
 
 ### Endogenous Products
 ##### 1/28 -- - Berry and Waldfogel (2001)
-##### 
+##### 1/30 -- Eizenberg (2014)
+##### 2/4 - Ciliberto, Murry, and Tamer (2018)
 
 
 
@@ -60,13 +61,13 @@ GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for I
 
 ### Endogenous Products
 
-Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
-
 Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evidence from radio broadcasting." _The Quarterly Journal of Economics_ 116, no. 3 (2001): 1009-1025.
 
 Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
 
-Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
+Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
+
+Federico Ciliberto, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
 
 Wollmann, Thomas G. "Trucks without bailouts: Equilibrium product characteristics for commercial vehicles." _American Economic Review_ 108, no. 6 (2018): 1364-1406.
 
@@ -78,7 +79,7 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ2NDU2NDcsLTk1MzE5NzM3NSwtNj
-Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
-MDAxXX0=
+eyJoaXN0b3J5IjpbMTc1OTI1MjIxNCwtOTUzMTk3Mzc1LC02ND
+Y1NDczNDUsMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMTQxMzMw
+MDFdfQ==
 -->
