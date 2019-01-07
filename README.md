@@ -63,7 +63,9 @@ Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evid
 Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
 
 Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
+
+Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous and Selective Service Choices After Airline Mergers," working paper here. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzExNTI2NCwtNjQ2NTQ3MzQ1LDE5MD
-Y0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
+eyJoaXN0b3J5IjpbLTEwNjUyMzE5NTUsLTY0NjU0NzM0NSwxOT
+A2NDM0MDAwLDQzMjExNjY0MSwtMTExNDEzMzAwMV19
 -->
