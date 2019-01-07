@@ -33,9 +33,9 @@ This repository contains the readings and problems set for the Murry half (first
 
 De Loecker, Jan, and Frederic Warzynski. "Markups and firm-level export status." _American economic review_ 102.6 (2012): 2437-71.
 
-Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "Patterns of firm entry and exit in US manufacturing industries." _The RAND journal of Economics_ (1988): 495-515.
+Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "The growth and failure of US manufacturing plants." _The Quarterly Journal of Economics_ 104, no. 4 (1989): 671-698.
 
-#### Some Applications
+#### Some Applications and Other Important Papers
 De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconomic implications." No. w23687. _National Bureau of Economic Research_, 2017.
 
 De Loecker, Jan, Pinelopi K. Goldberg, Amit K. Khandelwal, and Nina Pavcnik. "Prices, markups, and trade reform." _Econometrica_ 84, no. 2 (2016): 445-510.
@@ -45,7 +45,9 @@ Grieco, Paul LE, and Ryan C. McDevitt. "Productivity and quality in health care:
 De Loecker, Jan, and Paul T. Scott. _Estimating market power Evidence from the US Brewing Industry_. No. w22957. National Bureau of Economic Research, 2016.
 
 Aw, Bee Yan, Mark J. Roberts, and Daniel Yi Xu. "R&D investment, exporting, and productivity dynamics." _American Economic Review_ 101, no. 4 (2011): 1312-44.
+
+Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "Patterns of firm entry and exit in US manufacturing industries." _The RAND journal of Economics_ (1988): 495-515.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMT
-QxMzMwMDFdfQ==
+eyJoaXN0b3J5IjpbNDc5MzQyLDE5MDY0MzQwMDAsNDMyMTE2Nj
+QxLC0xMTE0MTMzMDAxXX0=
 -->
