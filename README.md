@@ -1,6 +1,9 @@
 # PhD IO II @ Boston College
 This repository contains the readings and problems set for the Murry half (first half) of PHD IO II (Spring 2019) @ Boston College with Michael Grubb. 
 
+Problem Set 1 is due on 2/4 @ 9am. 
+
+Problem Set 2 is 
 
 ## Class Schedule
 
@@ -33,7 +36,7 @@ This repository contains the readings and problems set for the Murry half (first
 
 ### Production Functions (note acronyms)
 
-#### Core
+##### _Core_
 [ACF] Ackerberg, Daniel A., Kevin Caves, and Garth Frazer. "Identification properties of recent production function estimators." *Econometrica* 83.6 (2015): 2411-2451.
 
 [OP] Olley, G. Steven, and Ariel Pakes. "The dynamics of productivity in the telecommunications equipment industry." *Econometrica* 64.6 (1996): 1263.
@@ -44,7 +47,7 @@ De Loecker, Jan, and Frederic Warzynski. "Markups and firm-level export status."
 
 Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "The growth and failure of US manufacturing plants." _The Quarterly Journal of Economics_ 104, no. 4 (1989): 671-698.
 
-#### Some Applications and Other Important Papers
+##### _Some Applications and Other Important Papers_
 De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconomic implications." No. w23687. _National Bureau of Economic Research_, 2017.
 
 De Loecker, Jan, Pinelopi K. Goldberg, Amit K. Khandelwal, and Nina Pavcnik. "Prices, markups, and trade reform." _Econometrica_ 84, no. 2 (2016): 445-510.
@@ -87,7 +90,7 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 ### Dynamics and Strategic Interactions
 Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzUwODA5NSwtOTUzMTk3Mzc1LC02ND
-Y1NDczNDUsMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMTQxMzMw
-MDFdfQ==
+eyJoaXN0b3J5IjpbMzU2ODQzMDU3LC05NTMxOTczNzUsLTY0Nj
+U0NzM0NSwxOTA2NDM0MDAwLDQzMjExNjY0MSwtMTExNDEzMzAw
+MV19
 -->
