@@ -18,11 +18,13 @@ This repository contains the readings and problems set for the Murry half (first
 ##### 1/30 -- - Berry and Waldfogel (2001)
 ##### 2/4 -- Eizenberg (2014)
 ##### 2/6 - Ciliberto, Murry, and Tamer (2018)
+
+#### TBA
 ##### 2/11 -- TBA
 ##### 2/13 -- TBA 
 
 #### Dynamics
-##### 2/18 -- 
+##### 2/18 -- Bajari, Benkard, and Levin (2009)
 
 
 ## References 
@@ -79,7 +81,7 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjIyNjY1OCwtOTUzMTk3Mzc1LC02ND
-Y1NDczNDUsMTkwNjQzNDAwMCw0MzIxMTY2NDEsLTExMTQxMzMw
-MDFdfQ==
+eyJoaXN0b3J5IjpbLTIwODgyODE4NDQsLTk1MzE5NzM3NSwtNj
+Q2NTQ3MzQ1LDE5MDY0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMz
+MDAxXX0=
 -->
