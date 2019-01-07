@@ -62,14 +62,16 @@ Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evid
 
 Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
 
+Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
+
 Fan, Ying. "Ownership consolidation and product characteristics: A study of the US daily newspaper market." _American Economic Review_ 103, no. 5 (2013): 1598-1628.
 
-Ciliberto, Federico, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
+Ying Fan and Chenyu Yang. ["Competition, Product Proliferation and Welfare: A Study of the U.S. Smartphone Market"](http://www-personal.umich.edu/~yingfan/proliferation_smartphone.pdf),  2018, CEPR Discussion Paper DP11423.
 
 Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous and Selective Service Choices After Airline Mergers," working paper [here](http://econweb.umd.edu/~sweeting/SWEETING_airlinemerger_july2018.pdf). 
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTkxNjMzMCwtNjQ2NTQ3MzQ1LDE5MD
+eyJoaXN0b3J5IjpbMjEwMDY2MzY0NSwtNjQ2NTQ3MzQ1LDE5MD
 Y0MzQwMDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
