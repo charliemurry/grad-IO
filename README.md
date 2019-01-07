@@ -52,7 +52,10 @@ Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "Patterns of firm entry an
 
 GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for Identification,” in Econometrics and Economic Theory in the Twentieth Century: The Ragnar Frisch Centennial Symposium, ed. by S. Strøm. Cambridge, U.K.: Cambridge University Press. [pp 2413-2421]
 
+
+
+### Endogenous Products
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzMyOTExLDE5MDY0MzQwMDAsNDMyMT
-E2NjQxLC0xMTE0MTMzMDAxXX0=
+eyJoaXN0b3J5IjpbLTE2NDg2NDIzMzEsMTkwNjQzNDAwMCw0Mz
+IxMTY2NDEsLTExMTQxMzMwMDFdfQ==
 -->
