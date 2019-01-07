@@ -55,7 +55,9 @@ GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for I
 
 
 ### Endogenous Products
+
+Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg2NDIzMzEsMTkwNjQzNDAwMCw0Mz
-IxMTY2NDEsLTExMTQxMzMwMDFdfQ==
+eyJoaXN0b3J5IjpbLTY0NjU0NzM0NSwxOTA2NDM0MDAwLDQzMj
+ExNjY0MSwtMTExNDEzMzAwMV19
 -->
