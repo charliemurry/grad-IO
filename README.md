@@ -28,7 +28,7 @@ Problem Set 2 is due on 3/4 @ 9am.
 
 #### Dynamics
 ##### 2/18 -- Bajari, Benkard, and Levin (2007)
-##### 2/20 -- TBA
+##### 2/20 -- Ifrach and Weintraub (2017)
 ##### 2/25 -- Wollman (2018)
 
 
@@ -102,8 +102,10 @@ Collard‐Wexler, Allan. "Demand fluctuations in the ready‐mix concrete indust
 Weintraub, Gabriel Y., C. Lanier Benkard, and Benjamin Van Roy. "Markov perfect industry dynamics with many firms." _Econometrica_ 76, no. 6 (2008): 1375-1411.
 
 Benkard, C. Lanier, Przemyslaw Jeziorski, and Gabriel Y. Weintraub. "Oblivious equilibrium for concentrated industries." _The RAND Journal of Economics_ 46, no. 4 (2015): 671-708.
+
+Ifrach, B., and G.Y. Weintraub (2017), [A Framework for Dynamic Oligopoly in Concentrated Industries](https://academic.oup.com/restud/article-abstract/84/3/1106/2670003), _The Review of Economic Studies_, Vol 84, No. 3, 1106-1150.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTA4NjEwNiw2OTE5NTQ4NzQsLTE0ND
+eyJoaXN0b3J5IjpbLTY0NDA2OTg5Myw2OTE5NTQ4NzQsLTE0ND
 QyMDY1MjcsLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MDY0MzQw
 MDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
