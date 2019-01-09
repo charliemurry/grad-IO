@@ -18,12 +18,12 @@ Problem Set 2 is due on 3/4 @ 9am.
 - Come to class with laptop having done first part of problem set. 
 
 #### Endogenous Products
-##### 1/30 -- - Berry and Waldfogel (2001)
+##### 1/30 -- Berry and Waldfogel (2001)
 ##### 2/4 -- Eizenberg (2014)
 ##### 2/6 - Ciliberto, Murry, and Tamer (2018)
 
-#### TBA
-##### 2/11 -- TBA
+#### Competition and Antitrust
+##### 2/11 -- Common Ownership
 ##### 2/13 -- TBA 
 
 #### Dynamics
@@ -92,7 +92,7 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 ### Dynamics and Strategic Interactions
 Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkxOTU0ODc0LC0xNDQ0MjA2NTI3LC05NT
-MxOTczNzUsLTY0NjU0NzM0NSwxOTA2NDM0MDAwLDQzMjExNjY0
-MSwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbLTEzNjAxNjU2NDksNjkxOTU0ODc0LC0xND
+Q0MjA2NTI3LC05NTMxOTczNzUsLTY0NjU0NzM0NSwxOTA2NDM0
+MDAwLDQzMjExNjY0MSwtMTExNDEzMzAwMV19
 -->
