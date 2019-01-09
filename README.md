@@ -99,8 +99,11 @@ Ryan, Stephen P. "The costs of environmental regulation in a concentrated indust
 
 Collard‐Wexler, Allan. "Demand fluctuations in the ready‐mix concrete industry." _Econometrica_ 81, no. 3 (2013): 1003-1037.
 
+Weintraub, Gabriel Y., C. Lanier Benkard, and Benjamin Van Roy. "Markov perfect industry dynamics with many firms." _Econometrica_ 76, no. 6 (2008): 1375-1411.
+
+Benkard, C. Lanier, Przemyslaw Jeziorski, and Gabriel Y. Weintraub. "Oblivious equilibrium for concentrated industries." _The RAND Journal of Economics_ 46, no. 4 (2015): 671-708.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjI0MDQ5ODUsNjkxOTU0ODc0LC0xND
-Q0MjA2NTI3LC05NTMxOTczNzUsLTY0NjU0NzM0NSwxOTA2NDM0
-MDAwLDQzMjExNjY0MSwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbLTE5NTA4NjEwNiw2OTE5NTQ4NzQsLTE0ND
+QyMDY1MjcsLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MDY0MzQw
+MDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
