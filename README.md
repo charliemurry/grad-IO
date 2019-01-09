@@ -97,8 +97,10 @@ Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic mode
 
 Ryan, Stephen P. "The costs of environmental regulation in a concentrated industry." _Econometrica_ 80, no. 3 (2012): 1019-1061.
 
+Collard‐Wexler, Allan. "Demand fluctuations in the ready‐mix concrete industry." _Econometrica_ 81, no. 3 (2013): 1003-1037.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjQ2MDk1OCw2OTE5NTQ4NzQsLTE0ND
-QyMDY1MjcsLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MDY0MzQw
-MDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
+eyJoaXN0b3J5IjpbLTIwNjI0MDQ5ODUsNjkxOTU0ODc0LC0xND
+Q0MjA2NTI3LC05NTMxOTczNzUsLTY0NjU0NzM0NSwxOTA2NDM0
+MDAwLDQzMjExNjY0MSwtMTExNDEzMzAwMV19
 -->
