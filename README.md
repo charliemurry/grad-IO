@@ -90,9 +90,15 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 
 
 ### Dynamics and Strategic Interactions
+
+Rust, John. "Optimal replacement of GMC bus engines: An empirical model of Harold Zurcher." _Econometrica: Journal of the Econometric Society_ (1987): 999-1033.
+
 Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
+
+Ryan, Stephen P. "The costs of environmental regulation in a concentrated industry." _Econometrica_ 80, no. 3 (2012): 1019-1061.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjAxNjU2NDksNjkxOTU0ODc0LC0xND
-Q0MjA2NTI3LC05NTMxOTczNzUsLTY0NjU0NzM0NSwxOTA2NDM0
-MDAwLDQzMjExNjY0MSwtMTExNDEzMzAwMV19
+eyJoaXN0b3J5IjpbLTYyNjQ2MDk1OCw2OTE5NTQ4NzQsLTE0ND
+QyMDY1MjcsLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MDY0MzQw
+MDAsNDMyMTE2NjQxLC0xMTE0MTMzMDAxXX0=
 -->
