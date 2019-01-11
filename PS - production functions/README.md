@@ -17,10 +17,12 @@ __(b)__ Now include fixed effects for the firm. Given the nature of the data do 
 ## Olley and Pakes
 Estimate the output elasticities using the methodology proposed by Olley and Pakes (1996). Why might this methodology be particularly troublesome in this conext (ie, using these particular data from Ghana). [While it is probably best to estiamte the OLS and FE models in STATA/R, you should probably switch to Matlab/Julia for this and the following tasks.]
 
-## LP/ACF
+## LP
 
-Estimate the output elasticities using the methodology proposed by Levinsohn and Petrin (2003) (ie, using materials as a proxy) but using the moments suggested by ACF. 
+Estimate the output elasticities using the methodology proposed by Levinsohn and Petrin (2003). 
 
+## ACF
+Estimate the output elasticities using the methodology proposed by ACF. 
 
 ## Markups
 Plot the average markup as a function of time. Regress markups on export status. Given the procedure you have done so far, why might the results from regressing markups on export status be suspect?
@@ -28,8 +30,6 @@ Plot the average markup as a function of time. Regress markups on export status.
 ## Selection
 What bias might be caused by selection out of the sample? Using the data, try to show that this might or might not be a problem. How might you deal with selection out of the sample?  
 
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjA3NjU2OV19
+eyJoaXN0b3J5IjpbLTMxMDc2NjUxN119
 -->
