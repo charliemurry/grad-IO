@@ -5,6 +5,8 @@ Problem Set 1 is due on 2/4 @ 9am.
 
 Problem Set 2 is due on 3/4 @ 9am. 
 
+_This is the first semester of this version of the course, so I will roll slides out sometimes partially finished._
+
 ## Class Schedule
 
 #### Production Functions
