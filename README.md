@@ -16,7 +16,7 @@ _This is the first semester of this version of the course, so I will roll slides
 - *Read ACF* 
 ##### 1/16 -- ACF. 
 ##### 1/23 -- Markups: De Loecker and Warzynski (2012) 
-##### 1/28 -- Work on Problem Set
+##### 1/28 -- Finish Production Functions Lectures and Work on Problem Set
 - Come to class with laptop having done first part of problem set. 
 
 #### Endogenous Products
