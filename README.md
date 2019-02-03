@@ -20,7 +20,7 @@ _This is the first semester of this version of the course, so I will roll slides
 - Come to class with laptop having done first part of problem set. 
 
 #### Endogenous Products
-##### 1/30 -- Berry and Waldfogel (2001)
+##### 1/30 -- Berry and Waldfogel (1999 RAND), Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
 ##### 2/4 -- Eizenberg (2014)
 ##### 2/6 - Ciliberto, Murry, and Tamer (2018)
 
@@ -74,9 +74,11 @@ GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for I
 
 Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evidence from radio broadcasting." _The Quarterly Journal of Economics_ 116, no. 3 (2001): 1009-1025.
 
-Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
+Steven Berry and Joel Waldfogel (1999) “Free Entry and Social Inefficiency in RadioBroadcasting,”RAND Journal of Economics, 30(3), 397–420.
 
 Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
+
+Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
 
 Federico Ciliberto, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
 
