@@ -20,18 +20,21 @@ _This is the first semester of this version of the course, so I will roll slides
 - Come to class with laptop having done first part of problem set. 
 
 #### Endogenous Products
-##### 1/30 -- Berry and Waldfogel (1999 RAND), Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
-##### 2/4 -- Eizenberg (2014)
-##### 2/6 - Ciliberto, Murry, and Tamer (2018)
+##### 1/30 -- Class Canceled due to job talk.
+##### 2/4 -- Radio 
+- Berry and Waldfogel (1999 RAND) 
+- Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
+##### 2/6 -- Eizenberg (2014)
+##### 2/11 - Ciliberto, Murry, and Tamer (2018)
 
-#### Competition and Antitrust
-##### 2/11 -- Common Ownership
-##### 2/13 -- TBA 
+#### Common Ownership
+##### 2/13 -- Common Ownership [Bring Slides -- paper tba]
 
 #### Dynamics
 ##### 2/18 -- Bajari, Benkard, and Levin (2007)
-##### 2/20 -- Ifrach and Weintraub (2017)
-##### 2/25 -- Wollman (2018)
+- perhaps Ifrach and Weintraub (2017) as well
+##### 2/20 -- Wollman (2018)
+##### 2/25 -- TBD
 
 
 ## References 
