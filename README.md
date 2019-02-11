@@ -12,29 +12,33 @@ _This is the first semester of this version of the course, so I will roll slides
 #### Production Functions
 (Read ACF beore the first day of class!)
 
-##### 1/14 -- Production functions: Intro, OP and LP. 
-- *Read ACF* 
-##### 1/16 -- ACF. 
+##### 1/14 -- Production functions: Intro, OP and LP 
+- Notation from ACF.  
+##### 1/16 -- ACF
 ##### 1/23 -- Markups: De Loecker and Warzynski (2012) 
 ##### 1/28 -- Finish Production Functions Lectures and Work on Problem Set
+- DeLoecker, Ekhout, and Unger (2018)
+- Traina (2018)
 - Come to class with laptop having done first part of problem set. 
 
 #### Endogenous Products
 ##### 1/30 -- Class Canceled due to job talk.
 ##### 2/4 -- Radio 
+- Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
 - Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
 ##### 2/6 -- Eizenberg (2014)
-##### 2/11 - Ciliberto, Murry, and Tamer (2018)
+##### 2/11 -- Catch up with Radio and PCs
+- Also go over PF problem set.
+##### 2/13 - Ciliberto, Murry, and Tamer (2018)
 
 #### Common Ownership
-##### 2/13 -- Common Ownership [Bring Slides -- paper tba]
+##### 2/18 -- Common Ownership [BRING SLIDES]
 
 #### Dynamics
-##### 2/18 -- Bajari, Benkard, and Levin (2007)
+##### 2/20 -- Bajari, Benkard, and Levin (2007)
 - perhaps Ifrach and Weintraub (2017) as well
-##### 2/20 -- Wollman (2018)
-##### 2/25 -- TBD
+##### 2/25 -- Wollman (2018) [BRING SLIDES]
 
 
 ## References 
@@ -42,18 +46,18 @@ _This is the first semester of this version of the course, so I will roll slides
 ### Production Functions 
 
 ##### _Core (note acronyms)_
-[ACF] Ackerberg, Daniel A., Kevin Caves, and Garth Frazer. "Identification properties of recent production function estimators." *Econometrica* 83.6 (2015): 2411-2451.
+\* [ACF] Ackerberg, Daniel A., Kevin Caves, and Garth Frazer. "Identification properties of recent production function estimators." *Econometrica* 83.6 (2015): 2411-2451.
 
 [OP] Olley, G. Steven, and Ariel Pakes. "The dynamics of productivity in the telecommunications equipment industry." *Econometrica* 64.6 (1996): 1263.
 
 [LP] Levinsohn, James, and Amil Petrin. "Estimating production functions using inputs to control for unobservables." *The Review of Economic Studies* 70.2 (2003): 317-341.
 
-De Loecker, Jan, and Frederic Warzynski. "Markups and firm-level export status." _American economic review_ 102.6 (2012): 2437-71.
+\* De Loecker, Jan, and Frederic Warzynski. "Markups and firm-level export status." _American economic review_ 102.6 (2012): 2437-71.
 
 Dunne, Timothy, Mark J. Roberts, and Larry Samuelson. "The growth and failure of US manufacturing plants." _The Quarterly Journal of Economics_ 104, no. 4 (1989): 671-698.
 
 ##### _Some Applications and Other Important Papers_
-De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconomic implications." No. w23687. _National Bureau of Economic Research_, 2017.
+\* De Loecker, Jan, and Jan Eeckhout. "The rise of market power and the macroeconomic implications." No. w23687. _National Bureau of Economic Research_, 2017.
 
 De Loecker, Jan, Pinelopi K. Goldberg, Amit K. Khandelwal, and Nina Pavcnik. "Prices, markups, and trade reform." _Econometrica_ 84, no. 2 (2016): 445-510.
 
@@ -75,17 +79,21 @@ GRILICHES, Z., AND J. MAIRESSE (1998): “Production Functions: The Search for I
 
 ### Endogenous Products
 
-Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evidence from radio broadcasting." _The Quarterly Journal of Economics_ 116, no. 3 (2001): 1009-1025.
+\* Mankiw, N. Gregory, and Michael D. Whinston. "Free entry and social inefficiency." The RAND Journal of Economics (1986): 48-58.
 
-Steven Berry and Joel Waldfogel (1999) “Free Entry and Social Inefficiency in RadioBroadcasting,”RAND Journal of Economics, 30(3), 397–420.
+Spence, Michael. "Product selection, fixed costs, and monopolistic competition." The Review of economic studies 43, no. 2 (1976): 217-235.
 
-Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
+\* Berry, Steven T., and Joel Waldfogel. "Do mergers increase product variety? Evidence from radio broadcasting." _The Quarterly Journal of Economics_ 116, no. 3 (2001): 1009-1025.
+
+\* Steven Berry and Joel Waldfogel (1999) “Free Entry and Social Inefficiency in RadioBroadcasting,”RAND Journal of Economics, 30(3), 397–420.
+
+\* Eizenberg, Alon. "Upstream innovation and product variety in the us home pc market." _Review of Economic Studies_ 81, no. 3 (2014): 1003-1045.
 
 Berry, Steven, Alon Eizenberg, and Joel Waldfogel. "Optimal product variety in radio markets." _The RAND Journal of Economics_ 47, no. 3 (2016): 463-497.
 
-Federico Ciliberto, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
+\* Federico Ciliberto, Charles Murry, and Elie T. Tamer. "Market structure and competition in airline markets." Boston College Working Paper, 2018.
 
-Wollmann, Thomas G. "Trucks without bailouts: Equilibrium product characteristics for commercial vehicles." _American Economic Review_ 108, no. 6 (2018): 1364-1406.
+\* Wollmann, Thomas G. "Trucks without bailouts: Equilibrium product characteristics for commercial vehicles." _American Economic Review_ 108, no. 6 (2018): 1364-1406.
 
 Fan, Ying. "Ownership consolidation and product characteristics: A study of the US daily newspaper market." _American Economic Review_ 103, no. 5 (2013): 1598-1628.
 
@@ -98,9 +106,9 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 
 ### Dynamics and Strategic Interactions
 
-Rust, John. "Optimal replacement of GMC bus engines: An empirical model of Harold Zurcher." _Econometrica: Journal of the Econometric Society_ (1987): 999-1033.
+\* Rust, John. "Optimal replacement of GMC bus engines: An empirical model of Harold Zurcher." _Econometrica: Journal of the Econometric Society_ (1987): 999-1033.
 
-Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
+\* Bajari, Patrick, C. Lanier Benkard, and Jonathan Levin. "Estimating dynamic models of imperfect competition." _Econometrica_ 75, no. 5 (2007): 1331-1370.
 
 Ryan, Stephen P. "The costs of environmental regulation in a concentrated industry." _Econometrica_ 80, no. 3 (2012): 1019-1061.
 
