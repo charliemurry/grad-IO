@@ -12,34 +12,29 @@ _This is the first semester of this version of the course, so I will roll slides
 #### Production Functions
 (Read ACF beore the first day of class!)
 
-##### 1/14 -- Production functions: Intro, OP and LP 
+##### 3/9 -- Production functions: Intro, OP and LP 
 - Notation from ACF.  
-##### 1/16 -- ACF
-##### 1/23 -- Markups: De Loecker and Warzynski (2012) 
-##### 1/28 -- Finish Production Functions Lectures and Work on Problem Set
-- DeLoecker, Ekhout, and Unger (2018)
-- Traina (2018)
-- Come to class with laptop having done first part of problem set. 
+##### 3/11 -- ACF
+##### Week of March 23 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
+##### Problem Set -- Posted on Github Repo. 
+
+#### Dynamic Games
+##### Week of March 30 -- Bajari, Benkard, and Levin (2007)
+- Perhaps Ifrach and Weintraub (2017)
 
 #### Endogenous Products
-##### 1/30 -- Class Canceled due to job talk.
-##### 2/4 -- Radio 
+##### Week of April 6 -- Radio 
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
 - Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
-##### 2/6 -- Eizenberg (2014)
-##### 2/11 -- Catch up with Radio and PCs
-- Also go over PF problem set.
-##### 2/13 - Ciliberto, Murry, and Tamer (2018)
+##### Week of April 13
+- Eizenberg (2014) 
+- Ciliberto, Murry, and Tamer (2020)
 
-#### Common Ownership
-##### 2/18 -- Common Ownership [BRING SLIDES]
-
-#### Dynamics
-##### 2/20 -- Bajari, Benkard, and Levin (2007)
-- perhaps Ifrach and Weintraub (2017) as well
-##### 2/25 -- Wollman (2018) [BRING SLIDES]
-
+#### Grab Bag
+- Ying Fan (2010, AER)
+- Wollman (2018, AER)
+- Common Ownership
 
 ## References 
 
@@ -119,6 +114,7 @@ Weintraub, Gabriel Y., C. Lanier Benkard, and Benjamin Van Roy. "Markov perfect 
 Benkard, C. Lanier, Przemyslaw Jeziorski, and Gabriel Y. Weintraub. "Oblivious equilibrium for concentrated industries." _The RAND Journal of Economics_ 46, no. 4 (2015): 671-708.
 
 Ifrach, B., and G.Y. Weintraub (2017), [A Framework for Dynamic Oligopoly in Concentrated Industries](https://academic.oup.com/restud/article-abstract/84/3/1106/2670003), _The Review of Economic Studies_, Vol 84, No. 3, 1106-1150.
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTY0NDA2OTg5Myw2OTE5NTQ4NzQsLTE0ND
 QyMDY1MjcsLTk1MzE5NzM3NSwtNjQ2NTQ3MzQ1LDE5MDY0MzQw
