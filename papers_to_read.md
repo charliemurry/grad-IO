@@ -5,6 +5,7 @@
 - Yanyou Chen: *Efficiency Gain from Mergers: Evidence from the U.S. Railroad Network*
 - Daniel Waldinger: *Targeting In-Kind Transfers Through Market Design: A Revealed Preference Analysis of Public Housing Allocation*
 - Shoshana Vasserman: *Scaling Auctions as Insurance: A Case Study in Infrastructure Procurement* https://scholar.harvard.edu/files/vasserman/files/bv_sept2019.pdf
+- Giulia Brancaccio *Learning by Trading: the case of the US market for municipal bonds* http://www.giulia-brancaccio.com/
 
 ## Recent Working Papers
 - 
