@@ -1,7 +1,7 @@
 ## Schedule
 
-Common Ownership -- Ryan
-Reubens -- Linqi
+Common Ownership -- Ryan  
+Reubens -- Linqi  
 Chen -- Gonzalo
 
 
