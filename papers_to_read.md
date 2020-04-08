@@ -1,3 +1,11 @@
+## Schedule
+
+Common Ownership -- Ryan
+Reubens -- Linqi
+Chen -- Gonzalo
+
+
+
 ## Recent JMPs
 
 - Michael Ruebens: *Ownership consolidation, monopsony power and efficiency: Evidence from the Chinese tobacco industry* https://michaelrubens.eu/research
