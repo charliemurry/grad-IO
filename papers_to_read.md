@@ -1,8 +1,8 @@
 ## Schedule
 
-Common Ownership -- Ryan April 21 
-Reubens -- Linqi -- April 28
-Chen -- Gonzalo -- May 5
+Common Ownership -- Ryan April 21   
+Reubens -- Linqi -- April 28  
+Chen -- Gonzalo -- May 5  
 
 
 
