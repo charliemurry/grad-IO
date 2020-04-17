@@ -4,7 +4,7 @@ Ryan -- April 21, Common Ownership
 Linqi -- April 28, Reubens  
 Gonzalo -- April 30, Chen   
 Arnab -- May 5, Valuing New Goods in a Model with Complementarity: Online Newspapers By MATTHEW GENTZKOW  
-
+Aastha -- May ?, Ying Fan
 
 ## Recent JMPs
 
