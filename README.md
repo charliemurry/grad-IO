@@ -31,6 +31,10 @@ _This is the first semester of this version of the course, so I will roll slides
 - Eizenberg (2014) 
 - Ciliberto, Murry, and Tamer (2020)
 
+##### Empirical Matching Markets
+- Laverde
+- ??
+
 #### Grab Bag
 - Ying Fan (2010, AER)
 - Wollman (2018, AER)
