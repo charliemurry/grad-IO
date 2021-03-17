@@ -19,15 +19,11 @@ _This is the first semester of this version of the course, so I will roll slides
 ##### 3/24 -- Production functions: Intro, OP and LP 
 - Notation from ACF.  
 ##### 3/29 -- ACF
-##### Week of March 23 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
+##### 3/31 and 4/5 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
 ##### Problem Set -- Posted on Github Repo. 
 
-#### Dynamic Games
-##### Week of March 30 -- Bajari, Benkard, and Levin (2007)
-- Perhaps Ifrach and Weintraub (2017)
-
 #### Endogenous Products
-##### Week of April 6 -- Radio 
+##### 4/7 and 4/12 -- Radio 
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
 - Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
@@ -38,6 +34,10 @@ _This is the first semester of this version of the course, so I will roll slides
 ##### Empirical Matching Markets
 - Laverde
 - ??
+
+#### Dynamic Games
+##### Week of March 30 -- Bajari, Benkard, and Levin (2007)
+- Perhaps Ifrach and Weintraub (2017)
 
 #### Grab Bag
 - Ying Fan (2010, AER)
