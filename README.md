@@ -14,11 +14,11 @@ _This is the first semester of this version of the course, so I will roll slides
 ##### 3/22 -- Berry, Gaynor, Scott Morton (2019) and Demsetz (1973)
 
 #### Production Functions
-(Read ACF beore the first day of class!)
+(See *References* for paper abbreviations.)
 
-##### 3/9 -- Production functions: Intro, OP and LP 
+##### 3/24 -- Production functions: Intro, OP and LP 
 - Notation from ACF.  
-##### 3/11 -- ACF
+##### 3/29 -- ACF
 ##### Week of March 23 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
 ##### Problem Set -- Posted on Github Repo. 
 
