@@ -1,13 +1,17 @@
 # PhD IO II @ Boston College
-This repository contains the readings and problems set for the Murry half (first half) of PHD IO II (Spring 2019) @ Boston College with Michael Grubb. 
+This repository contains the readings and problems set for the Murry half (second half) of PHD IO II (Spring 2021) @ Boston College with Michael Grubb. 
 
-Problem Set 1 is due on 2/4 @ 9am. 
+Problem Set 1 is due on XX @ 9am. 
 
-Problem Set 2 is due on 3/4 @ 9am. 
+Problem Set 2 is due on XX @ 9am. 
 
 _This is the first semester of this version of the course, so I will roll slides out sometimes partially finished._
 
 ## Class Schedule
+
+#### Market Power
+
+##### 3/22 -- Berry, Gaynor, Scott Morton (2019) and Demsetz (1973)
 
 #### Production Functions
 (Read ACF beore the first day of class!)
@@ -41,6 +45,15 @@ _This is the first semester of this version of the course, so I will roll slides
 - Common Ownership
 
 ## References 
+
+
+### Market Power
+
+Demsetz, H. (1973). Industry Structure , Market Rivalry , and Public Policy. Journal of Law and Economics, 16(1), 1–9.
+
+Berry, Steven, Martin Gaynor, and Fiona Scott Morton. 2019. "Do Increasing Markups Matter? Lessons from Empirical Industrial Organization." Journal of Economic Perspectives, 33 (3): 44-68.
+
+
 
 ### Production Functions 
 
