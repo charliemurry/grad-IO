@@ -22,12 +22,16 @@ _This is the first semester of this version of the course, so I will roll slides
 ##### 3/31 and 4/5 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
 ##### Problem Set -- Posted on Github Repo. 
 
+#### Demand Approach to Market Power
+
+##### 4/7 -- Grieco, Murry, and Yurukoglu (wp)
+
 #### Endogenous Products
-##### 4/7 and 4/12 -- Radio 
+##### Week of 4/12 -- Radio 
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
 - Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
-##### 4/14 and 4/19
+##### Week of 4/19
 - Eizenberg (2014) 
 - Ciliberto, Murry, and Tamer (2020)
 
