@@ -27,24 +27,19 @@ _This is the first semester of this version of the course, so I will roll slides
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
 - Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
-##### Week of April 13
+##### 4/14 and 4/19
 - Eizenberg (2014) 
 - Ciliberto, Murry, and Tamer (2020)
 
-##### Empirical Matching Markets
-- Laverde
-- ??
+##### Empirical Matching Markets and Market Design
+- Agarwal and Somani (2020)
+- Laverde (wp)
+- Bhattacharya (2021)
 
-#### Dynamic Games
-##### Week of March 30 -- Bajari, Benkard, and Levin (2007)
-- Perhaps Ifrach and Weintraub (2017)
-
-#### Grab Bag
-- Ying Fan (2010, AER)
-- Wollman (2018, AER)
+### TBD Rest of course
 - Common Ownership
+- Other?
 
-## References 
 
 
 ### Market Power
