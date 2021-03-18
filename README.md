@@ -35,6 +35,12 @@ _This is the first semester of this version of the course, so I will roll slides
 - Eizenberg (2014) 
 - Ciliberto, Murry, and Tamer (2020)
 
+
+##### Advanced Demand Estimation
+- 4/26, Georee (2008)
+- 4/28, TBD
+
+
 ##### Empirical Matching Markets and Market Design
 - Agarwal and Somani (2020)
 - Laverde (wp)
