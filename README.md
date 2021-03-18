@@ -117,9 +117,11 @@ Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](h
 
 ### Advanced Demand Estimation
 
-Georee, M. S. (2008). Limited Information and Advertising in the U.S. Personal Computer Industry. Econometrica, 76(5), 1017–1074. https://doi.org/10.3982/ecta4158
+\* Georee, M. S. (2008). Limited Information and Advertising in the U.S. Personal Computer Industry. Econometrica, 76(5), 1017–1074. https://doi.org/10.3982/ecta4158
 
 Grieco, Paul, Charles Murry, Joris Pinkse, Stephan Sagl. Efficient Estimation of Random Coefficients Demand Models using Product and Consumer Datasets. 2021. Working Paper. 
+
+Crawford, G., & Yurukoglu, A. (2016). The Welfare Effects of Bundling in Multichannel Television Markets. American Economic Review, 102(2), 643–685.
 
 Wildenbeest et al.
 
