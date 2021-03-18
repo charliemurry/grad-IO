@@ -115,6 +115,15 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 
 
+### Advanced Demand Estimation
+
+Georee, M. S. (2008). Limited Information and Advertising in the U.S. Personal Computer Industry. Econometrica, 76(5), 1017–1074. https://doi.org/10.3982/ecta4158
+
+Grieco, Paul, Charles Murry, Joris Pinkse, Stephan Sagl. Efficient Estimation of Random Coefficients Demand Models using Product and Consumer Datasets. 2021. Working Paper. 
+
+Wildenbeest et al.
+
+
 ### Dynamics and Strategic Interactions
 
 \* Rust, John. "Optimal replacement of GMC bus engines: An empirical model of Harold Zurcher." _Econometrica: Journal of the Econometric Society_ (1987): 999-1033.
