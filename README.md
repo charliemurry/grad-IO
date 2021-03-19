@@ -54,10 +54,11 @@ _This is the first semester of this version of the course, so I will roll slides
 
 ### Market Power
 
-Demsetz, H. (1973). Industry Structure , Market Rivalry , and Public Policy. Journal of Law and Economics, 16(1), 1–9.
+\* Demsetz, H. (1973). Industry Structure , Market Rivalry , and Public Policy. Journal of Law and Economics, 16(1), 1–9.
 
-Berry, Steven, Martin Gaynor, and Fiona Scott Morton. 2019. "Do Increasing Markups Matter? Lessons from Empirical Industrial Organization." Journal of Economic Perspectives, 33 (3): 44-68.
+\* Berry, Steven, Martin Gaynor, and Fiona Scott Morton. 2019. "Do Increasing Markups Matter? Lessons from Empirical Industrial Organization." Journal of Economic Perspectives, 33 (3): 44-68.
 
+\* Khan, Lina M. "Amazon's antitrust paradox." Yale lJ 126 (2016): 710.
 
 
 ### Production Functions 
