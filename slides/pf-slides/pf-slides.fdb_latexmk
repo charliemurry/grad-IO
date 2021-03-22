@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1583941696 "pf-slides.tex" "pf-slides.pdf" "pf-slides" 1583941701
+["pdflatex"] 1583941696 "pf-slides.tex" "pf-slides.pdf" "pf-slides" 1597332132
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lato/a_kzqx6e.enc" 1508701834 2762 32f1fa27d5e9215dabba891c919e843f ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -279,13 +279,13 @@
   "pf-slides.aux" 1583941700 10212 c9ce915592fe92737a5d0369165931fa ""
   "pf-slides.nav" 1583941700 6181 8755615ba4ab9df9e30f0749e88849fe ""
   "pf-slides.out" 1583941700 245 9d7c587451f9e3e192c99ea094af737c ""
-  "pf-slides.tex" 1583941695 34606 dd2096b8bda307e24b200ec6edff8439 ""
+  "pf-slides.tex" 1597332131 34606 dd2096b8bda307e24b200ec6edff8439 ""
   "pf-slides.toc" 1583941700 251 707dc29fee262d9108d2d621cb3a921d ""
   (generated)
-  "pf-slides.log"
-  "pf-slides.out"
-  "pf-slides.nav"
-  "pf-slides.pdf"
   "pf-slides.toc"
-  "pf-slides.snm"
+  "pf-slides.nav"
+  "pf-slides.log"
   "pf-slides.aux"
+  "pf-slides.snm"
+  "pf-slides.out"
+  "pf-slides.pdf"
