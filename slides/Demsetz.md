@@ -124,7 +124,7 @@ Markup = $\frac{p-c}{p}$
 
 <br><br>
 
-$$ p_{jm} = X_{jm} β + HHI_{jm} + ε_{jm}$$
+$$ p_{jm} = X_{jm} β + αHHI_{jm} + ε_{jm}$$
 
 
 <br>
@@ -226,7 +226,7 @@ $$Q = f(X,p;θ)$$
 
 Prices (multi-product oligopolist)
 
-$$ (p_j-c_j)\frac{\partial Q_j}{\partial p} + Q_j + \sum_{k\in J^f} (p_k - c_k)\frac{\partial Q_k}{\partial p}  $$
+$$ (p_j-c_j)\frac{\partial Q_j}{\partial p} + Q_j + \sum_{k\in J^f} (p_k - c_k)\frac{\partial Q_k}{\partial p}  = 0$$
 
 (where $J^f$ are all products owned by the same firm)
 
