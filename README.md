@@ -22,7 +22,7 @@ _This is the first semester of this version of the course, so I will roll slides
 ##### 3/31 and 4/5 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
 ##### Problem Set -- Posted on Github Repo. 
 
-#### Demand Approach to Market Power
+#### Demand Approach to Trends in Market Power
 
 ##### 4/7 -- Grieco, Murry, and Yurukoglu (wp)
 
