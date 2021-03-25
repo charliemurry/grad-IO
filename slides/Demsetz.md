@@ -7,7 +7,6 @@ backgroundColor: #fff
 marp: true
 footer: 'Boston College, PhD IO II'
 
-
 ---
 
 <!--
