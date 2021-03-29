@@ -1,5 +1,5 @@
 \documentclass[11pt, aspectratio=169]{beamer}
-\usefonttheme[onlymath]{serif}
+% \usefonttheme[onlymath]{serif}
 % Autocompletions:
 % wit: begin wideitemize
 % bit: begin itemize
@@ -28,14 +28,16 @@
 %\setbeameroption{show only notes} % Only notes
 %\setbeameroption{show notes on second screen=right} % Both
 
-\usepackage{helvet}
-\usepackage[default]{lato}
+% \usepackage{helvet}
+% \usepackage[default]{lato}
+% \usepackage[T1]{fontenc}
+
 \usepackage{array}
 
-
-\usepackage{tikz}
 \usepackage{verbatim}
 \setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}
+
+\usepackage{tikz}
 \usetikzlibrary{positioning}
 % \usetikzlibrary{snakes}
 \usetikzlibrary{decorations}
@@ -152,7 +154,7 @@
 \title[]{\textcolor{blue}{Estimating Production Functions}}
 
 \author[CM]{Charlie Murry}
-\institute{Boston College}
+% \institute{Boston College}
 
 % \author[PGP]{}
 % \institute[FRBNY]{\small{\begin{tabular}{c c c}
@@ -163,7 +165,7 @@
 % \multicolumn{3}{c}{Somewhere Fancy} \\
 % \end{tabular}}}
 
-\date{\today}
+% \date{\today}
 
 
 \begin{document}
@@ -515,7 +517,7 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 	\item Decompose $\omega$ into the expected part (given the state $\mathcal{I}$) plus an innovation: 
 	$$\omega_{it} = E[\omega_{it}\mid\mathcal{I}_{it}] + \xi_{it} = E[\omega_{it}\mid\omega_{i,t-1}] + \xi_{it} = g(\omega_{i,t-1}) + \xi_{it}$$
 	\item Now plug this into the production function:
-	$$y_{it} = \beta_{\ell} \ell_{it} + \beta k_{it} + g(\Phi_{t-1}(k_{i,t-1},i_{i,t-1})-\beta k_{i,t-1}) + \xi_{it} + \varepsilon_{it}$$
+	$$y_{it} = \beta_{\ell} \ell_{it} + \beta_k k_{it} + g(\Phi_{t-1}(k_{i,t-1},i_{i,t-1})-\beta_k k_{i,t-1}) + \xi_{it} + \varepsilon_{it}$$
 
 \end{wideitemize}
 
@@ -529,7 +531,7 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 	\item Use the following moment:
 	$$E[\xi_{it} + \varepsilon_{it} \mid \mathcal{I}_{it}] = 0$$
 	or 
-	$$E[y_{it} - \beta_{\ell} \ell_{it} - \beta k_{it} - g(\Phi_{t-1}(k_{i,t-1},i_{i,t-1})-\beta k_{i,t-1}) \mid \mathcal{I}_{it}] = 0.$$
+	$$E[y_{it} - \beta_{\ell} \ell_{it} - \beta_k k_{it} - g(\Phi_{t-1}(k_{i,t-1},i_{i,t-1})-\beta k_{i,t-1}) \mid \mathcal{I}_{it}] = 0.$$
 \end{wideitemize}
 
 \bigskip
@@ -539,7 +541,7 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 	\item plug-in first-stage estimates: $\hat{\beta_{\ell}}$ and $\hat{\Phi}$ and pick parametric form for $g()$.
 	\item guess $\beta_k$.
 	\item Estimate $g()$: 
-	$$ \phi_{it} = \beta_k k_{it} + \underbrace{g(\phi_{i,t-1} - \beta_k k_{i,t-1})}_{E[\omega_t \mid \mathcal{I}_t]} + \xi_{it}$$
+	$$ \Phi_{it} = \beta_k k_{it} + \underbrace{g(\Phi_{i,t-1} - \beta_k k_{i,t-1})}_{E[\omega_t \mid \mathcal{I}_t]} + \xi_{it}$$
 	\item Back out $\hat{\xi}(\beta_k)$
 	\item Evaluate $E[\xi|\mathcal{I}]$
 	\item go back to 2. until $E[\xi|\mathcal{I}]=0$.
@@ -589,7 +591,7 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
     \end{wideitemize}
     
     \bigskip
-    \textbf{Why is the important?}
+    \textbf{Why?}
     \begin{wideitemize}
     	\item Investment proxy not valid for plants with zero investment.
     	\item Literature has shown investment is ``lumpy''.
@@ -603,12 +605,23 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 \end{frame}
 
 
+
+\begin{frame}[c]\frametitle{Investment Zeros}
+
+\centering    
+\includegraphics[height=.5\textheight]{LP-Table2.png}
+
+\end{frame}
+
+
+
+
 \begin{frame}[c]\frametitle{LP Estimation}
     
 \begin{wideitemize}
 	\item First Stage:
 	$$	y_{it} = \beta_{\ell} \ell_{it} + \Phi_t(k_{it},m_{it}) + \varepsilon_{it}$$
-	\item Estimate $\hat{\beta}_l$ and $\hat{\Phi}()$ treating $\Phi$ non-parametrically.
+	\item Estimate $\hat{\beta}_{\ell}$ and $\hat{\Phi}()$ treating $\Phi$ non-parametrically.
 	\item Second Stage:	
 	$$E[\xi_{it} + \varepsilon_{it} \mid \mathcal{I}_{it}] = 0$$
 	or 
@@ -623,9 +636,10 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 \begin{frame}[c]\frametitle{Discussion}
     
 \begin{wideenumerate}
-	\item We need a similar condition as before: $m(k,\omega)$ is monotonically increasing in productivity.
+	\item We need a similar condition on the ``materials'' function as we had on the ``investment'' function in OP: $m(k,\omega)$ is monotonically increasing in productivity ($\omega$).
 	\begin{wideitemize}
-		\item This relies on properties of the production function -- in OP this relied on the Markov Perfect Eqm assumption. 
+		\item This relies on properties of the production function.
+		\item In OP it also relied this relied on the Markov Perfect Eqm assumption. Note here.
 		\item Why? materials is a static input.
 	\end{wideitemize}
 	\item OP rules out firm specific unobservables affecting investment demand -- firm-specific adjustment costs, prices, etc. 
@@ -634,7 +648,7 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 		\item LP can allow for this because $m$ is static, so $m(k_t,\omega_t)$ does not depend on investment. 	
 	\end{wideitemize}
 	\item In the second stage the need to identify two parameters so they use two moments: 
-	$$E[\xi_t 
+	$$E[\xi_t \times
 	\begin{pmatrix}
 	k_t \\
 	m_{t-1}
@@ -644,13 +658,6 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 
 \end{frame}
 
-
-\begin{frame}[c]\frametitle{Investment Zeros}
-
-\centering    
-\includegraphics[height=.5\textheight]{LP-Table2.png}
-
-\end{frame}
 
 
 \begin{frame}[c]\frametitle{Results}
@@ -676,9 +683,35 @@ As ACF point out, proving this is tedious and may not extend to all models, but 
 \label{sec:ackerberg_caves_and_frazer}
 
 
+\begin{frame}[c]\frametitle{Summary}
+    
+\textbf{Olley Pakes}\\
+
+Use investment to proxy for unobserved productivity, $\omega$.\\
+
+ALternatives would be: IV, fixed effects, dynamic panel methods.
+
+
+
+
+
+\Skip
+\textbf{Levinsohn and Petrin}\\
+
+Use materials instead. 
+\begin{itemize}
+	\item No zeros, unlike investment.
+	\item weaker assumptions.  
+\end{itemize}
+
+
+
+\end{frame}
+
+
 \begin{frame}[c]\frametitle{Ackerberg, Caves, and Frazer (2015)}
     
-Conceptual issue with OP/LP: functional dependence.
+Conceptual issue with OP/LP: \textbf{functional dependence}.
 \begin{wideitemize}
     \item Conditional on $k$, $\omega$ (and $m$), labor is completely determined...oops.
 \end{wideitemize}
@@ -704,13 +737,16 @@ The point is more general than the example above.
 \end{wideitemize}
 
 \bigskip
-What to do?
+What to do? \emph{ACF essentially propose modelling their way out of this issue.}
+
+\Skip
+In other words: what assumptions should we have made on the DGP in order for our regressions to make sense.
 \begin{wideitemize}
 	\item Think about data generating process for $\ell$ that is realistic and implies $\ell$ is not completely pinned down by $\{k,m,t\}$.
 	\item ACF consider timing assumptions on the shocks and the choice of $\ell$.
 	\item Solution? Assume ``optimization error'' in $\ell$.
 	\begin{wideitemize}
-		\item No. ``Optimization error ''in other vars (ie $m$) means we cannot invert $\omega(k,m)$.
+		\item Note: ``Optimization error ''in other vars (ie $m$) means we cannot invert $\omega(k,m)$.
 		\item In fact, measurement error in general causes problems in this literature. 
 	\end{wideitemize}
 	
@@ -720,7 +756,7 @@ What to do?
 \end{frame}
 
 
-\begin{frame}[c]\frametitle{Alternative DGP?}
+\begin{frame}[c]\frametitle{ACF's Alternative DGP}
     
 \begin{wideitemize}
 	\item Assume $\ell$ set at time $t$
@@ -730,7 +766,7 @@ What to do?
 	$$p(\omega_{t-b}\mid \mathcal{I}_{t-1}) = p(\omega_{t-b}\mid\omega_{t-1})$$
 	\item there is an unobserved i.i.d. shock to $\ell$ after materials are chosen and before $\ell$ is chosen. 
 	\item $\ell$ now has its own shock and it is not a state variable. 
-	\item This works, but playing with timing like this gets a bit absurd. 
+	\item This works, but playing with timing like this can get a bit absurd. 
 \end{wideitemize}
     
 

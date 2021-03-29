@@ -1,9 +1,9 @@
 # Problem Set – Production Functions
 
-*PHD IO, Spring 2020*  
+*PHD IO, Spring 2021*  
 *Boston College*  
 *Prof. Charlie Murry*  
-*Due: April 1, 2020*    
+*Due: April 14, 2021*    
 
 I posted a dataset: firms-cleaned.dta. This is data from a survey of firms in Ghana starting in the 1991. An observation is a  **firm-year**. I describe the dataset in more detail in a dataset readme file.
 
