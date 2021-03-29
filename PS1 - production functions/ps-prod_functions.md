@@ -62,4 +62,4 @@ Plot the average markup as a function of time. Regress markups on export status.
 
 ## Selection
 
-What bias might be caused by selection out of the sample? Using the data, try to show that this might or might not be a problem. How might you deal with selection out of the sample?
+What bias might be caused by selection out of the sample? Show me a picture that suggests that selection is or isn't a problem. 
