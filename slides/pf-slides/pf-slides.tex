@@ -1130,6 +1130,66 @@ In other words: what assumptions should we have made on the DGP in order for our
 \end{frame}
 
 
+
+
+\begin{frame}[c]\frametitle{Bond, Hashemi, Kaplan, Zoch}
+\framesubtitle{Some Unpleasant Markup Arithmatic: Production Function Elasticities and their
+Estimation from Production Data}    
+
+\Skip
+1. \textbf{Identification}
+Ratio estimator using revenue elasticity, in place of output elasticity, contains
+no information about markups.
+
+\Skip\Skip\Skip
+2. \textbf{Estimation}\\
+It is not possible to estimate output elasticities using revenue data if firms have
+market power in output markets.
+
+\end{frame}
+
+
+\begin{frame}[c]\frametitle{Identification}
+    
+If firms have output market power, FOC w.r.t. Q in cost minimization:
+
+\[
+	\frac{P}{C'(Q)} = \frac{\epsilon_{Q,P}}{\epsilon_{Q,P} - 1}
+\]
+
+\Skip\Skip
+Why? As you produce more you march down the demand curve.
+
+\begin{align*}
+	\hat{\mu_R} &= \frac{\epsilon_{Q,P} - 1}{\epsilon_{Q,P}} \hat{\mu}_Q \\
+	&= \frac{C'(Q)}{P} \frac{P}{C'(Q)}
+\end{align*}
+
+
+\end{frame}
+
+
+\begin{frame}[c]\frametitle{Estimation}
+
+\[    
+ r_{it} = \beta_{K} k_{it} + \beta_{L}\ell_{it} + \beta_{M} m_{it} + 
+ \omega_{it} + \textcolor{red}{p_{it}} + \epsilon_{it}   
+\]
+
+because $r_{it} = y_{it} - \textcolor{red}{p_{it}}$
+
+\Skip
+\textbf{Takeaway}: Identifying $\beta_M$ using revenue data would require an instrument
+that: (i) shifts demand for $m_{it}$; and (ii) is orthogonal to $p_{it}$.
+
+\Skip\Skip
+(Screenshot from authors slide-deck.)
+\Skip
+\includegraphics[height=0.45\textheight]{BondScreenshot.png}
+
+\end{frame}
+
+
 % section de_loecker_and_warzynski_ (end)
 
 
