@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{Olley and Pakes}{12}{0}{1}
-\beamer@sectionintoc {2}{Levinsohn and Petrin}{22}{0}{2}
-\beamer@sectionintoc {3}{Ackerberg, Caves, and Frazer}{29}{0}{3}
-\beamer@sectionintoc {4}{Markups: De Loecker and Warzynski (2012)}{40}{0}{4}
