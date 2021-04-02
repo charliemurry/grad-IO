@@ -29,7 +29,7 @@ Estimate the output elasticities using the methodology proposed by Levinsohn and
 
 ## ACF
 
-Estimate the output elasticities using the methodology proposed by Levinsohn and Petrin (2003). What assumption about materials are you implicitly making? Is this assumption different than you were treating materials in the previous estimations?
+Estimate the output elasticities using the methodology proposed by ACF. What assumption about materials are you implicitly making? Is this assumption different than you were treating materials in the previous estimations?
 
 ## Dynamic Panel
 Another way to think about the endogeneity of TFP is to decompose TFP into two shocks like usual, $\omega_{it} + \epsilon_{it}$, and then put structure on $\omega$. [*Note: ACF have a discussion of this. There is also a discussion in Victor A's book chapter.*]
