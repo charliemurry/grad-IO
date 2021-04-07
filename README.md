@@ -30,7 +30,7 @@ _This is the first semester of this version of the course, so I will roll slides
 ##### Week of 4/12 -- Radio 
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
-- Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
+- Berry and Waldfogel (2001 QJE) 
 ##### Week of 4/19
 - Eizenberg (2014) 
 - Ciliberto, Murry, and Tamer (2020)
