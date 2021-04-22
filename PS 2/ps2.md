@@ -55,23 +55,38 @@ i. Why do I label the error in this regression as $ω$?
 
 ### 4. Estimate fixed costs of redesign. 
 
-Estimate fixed costs of redesign by using the revealed preference approach a la Eizenberg (2014) and the following necessary condition
+Eizenberg(2014) uses a revealed preference approach to estimate fixed cost bounds. The idea is that given every other choice (by all other firms in period t and in all other periods), a parent firm has no profitable single deviation. In this section we will use the same approach to estimate fixed cost bounds for redesigning a truck.  
+
+If a firm chooses to redesign a truck j in year t, the following necessary condition must hold:
 
 $$
-\mathbb{E}π_{jt}(R_{jt}=1;X,p,R) ≥ \mathbb{E}π_{jt}(R_{jt}=0;X,p,R)
-$$
-where $R$ denotes the redesign status of the car and the expectation is taken over ξ and ω. 
-
-In order to operationalize these necessary conditions, assume that counterfactual redesign decisions include delaying redesign by one year or moving redesign up by one year. Note: each time a truck gets redesigned its $R$ variable changes, but also the other $X$'s tend to have non-trival differences. 
-
-You will need to compute expected profits from the empirical distribution of ξ and ω. Use 10 draws from the joint distribution. (In practice, this is too few. But I do not want this to be a bottleneck.)
-
-Estimate lower and upper bounds for $\bar{F}$ for the following fixed costs specification,
-
-$$
-F_{jt} =  \bar{F} + \nu_{jt}.
+\mathbb{E}π_{jt}(R_{jt}=0;X,p,R_{-jt}, \gamma, \alpha, \beta)  \geq \mathbb{E}π_{jt}(R_{jt}=1;X,p,R_{-jt},  \gamma, \alpha, \beta) - F_{jt}
 $$
 
-(i) Report your upper and lower bounds. You do not need report confidence intervals, as in Eizenberg (2014) eq. (14).  
+$R_{jt}$ is the decision to redesign truck j at time t, and $R_{-jt}$ has the redesign decisions for all other products.  The expectation is over the $\xi$ and $\omega$ distributions, which we estimated in sections 2 and 3.
+
+If truck $j$ from firm $f$ is redesigned in year $t$, estimate $\bar{F}_{jt}$ in the following steps:  
+
+   1. Take a random draw from the estimated vector of ($\xi_{jt}$, $\omega_{jt}$).  
+   2. For this draw, estimate variable profits for firm $f$ in year $t$ at the observed equilibrium (i.e. the observed redesign decisions).  
+   3. Keeping the redesign decisions for all other trucks constant, set the redesign decision for truck $j$ to 0, and use the pricing FOCs to re-estimate the shares and pricing equilibrium. Note: each time a truck gets redesigned its $R$ variable changes, but also the other $X$'s tend to have non-trival differences.   
+   4. Calculate profits at the equilibrium in step 3.  
+   5. Calculate the difference between estimated variable profits in 2 and 3. Let's call this $F^i_{jt}$.  
+
+
+Repeat the above steps for 10 draws of $\xi_{jt}$ and $\omega_{jt}$ (In practice, this is too few. But I do not want this to be a bottleneck). Calculate $F_{jt} = 1/10(\sum_i F^i_{jt})$.
+
+Similarly, estimate $\underline{F_{jt}}$ when a firm did not choose to redesign its truck $j$ year $t$, $\textbf{but did so in t+1}$, i.e. the counterfactual decision is to move the redesign decision up by one year. For example, estimate $\underline{F_{jt}}$ for 2014 if a firm chose to redesign truck $j$ in 2015.  
+
+Our goal is to estimate lower and upper bounds for F for the following fixed costs specification:
+$$
+F_{jt} =  F + \nu_{jt}
+$$  
+
+Note that there is a selection problem, i.e. conditional on observed decisions, $E(\nu_{jt}) \neq 0$. Because of this, you cannot use the mean of estimated $\bar{F}_{jt}$s to estimate $\bar{F}$, and the mean of estimated $\underline{F}_{jt}$s to estimate $\underline{F}$. Solve this selection problem as in Eizenberg(2014) to estimate $\bar{F}$ and $\underline{F}$.
+
+(i) Report your upper and lower bounds. You do not need report confidence intervals, as in Eizenberg (2014) eq. (14). 
+
 (ii) Is the nature of selection different in this case than in the setting of Eizenberg? Why or why not?
+
 (iii) Consider that in reality all truck manufacturers always redesigned as quickly as possible? In other words, the option to redesign 1 year earlier is not a feasible option and cannot be used to estimate $\bar{F}$. How would that change your results? Are the additional issues that arise?
