@@ -8,7 +8,7 @@ The data is in trucks.csv. It is a pull from the dataset from my paper on car ma
 
 ```make``` Make of car (ex. Honda).  
 ```model``` Make and model of car (ex. Honda Accord).  
-```parent``` Ultimate owner/manufactuer (ex. VW owns VW and Audi and Porsche).  
+```parent``` Ultimate owner/manufacturer (ex. VW owns VW and Audi and Porsche).  
 ```sales``` Sales.  
 ```msrp``` Price.  
 ```curbweight``` weight of car with no passengers or cargo.  
@@ -60,7 +60,7 @@ Eizenberg(2014) uses a revealed preference approach to estimate fixed cost bound
 If a firm chooses to redesign a truck j in year t, the following necessary condition must hold:
 
 $$
-\mathbb{E}π_{jt}(R_{jt}=0;X,p,R_{-jt}, \gamma, \alpha, \beta)  \geq \mathbb{E}π_{jt}(R_{jt}=1;X,p,R_{-jt},  \gamma, \alpha, \beta) - F_{jt}
+\mathbb{E}π_{jt}(R_{jt}=0;X,p,R_{-jt}, \gamma, \alpha, \beta)  \leq \mathbb{E}π_{jt}(R_{jt}=1;X,p,R_{-jt},  \gamma, \alpha, \beta) - F_{jt}
 $$
 
 $R_{jt}$ is the decision to redesign truck j at time t, and $R_{-jt}$ has the redesign decisions for all other products.  The expectation is over the $\xi$ and $\omega$ distributions, which we estimated in sections 2 and 3.
