@@ -1,3 +1,8 @@
+---
+title: "ps2"
+output: pdf_document
+---
+
 ## Problem Set 2: Trucks
 
 Date assigned: April 20, 2021.  
@@ -45,10 +50,10 @@ iii. Graph average markups across time.
 ### 3. Estimate a marginal cost equation
 
 $$
-log(mc_{jt}) = [Z_{jt} ξ_{jt}] γ +  ω_{jt}
+log(mc_{jt}) = Z_{jt} γ +  ω_{jt}
 $$
 
-and also include make and year effects, like in demand. $Z$ should include everything in X except ```yearssincedesign```. 
+and also include make and year effects, like in demand. $Z$ should include everything in X except ```yearssincedesign```, plus $\xi_{jt}$. 
 
 ii. Report the results. 
 i. Why do I label the error in this regression as $ω$?  
