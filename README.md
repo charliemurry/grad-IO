@@ -1,42 +1,60 @@
 # PhD IO II @ Boston College
-This repository contains the readings and problems set for the Murry half (first half) of PHD IO II (Spring 2019) @ Boston College with Michael Grubb. 
+This repository contains the readings and problems set for the Murry half (second half) of PHD IO II (Spring 2021) @ Boston College with Michael Grubb. 
 
-Problem Set 1 is due on 2/4 @ 9am. 
+Problem Set 1 is due on XX @ 9am. 
 
-Problem Set 2 is due on 3/4 @ 9am. 
+Problem Set 2 is due on XX @ 9am. 
 
 _This is the first semester of this version of the course, so I will roll slides out sometimes partially finished._
 
 ## Class Schedule
 
-#### Production Functions
-(Read ACF beore the first day of class!)
+#### Market Power
 
-##### 3/9 -- Production functions: Intro, OP and LP 
+##### 3/22 -- Berry, Gaynor, Scott Morton (2019) and Demsetz (1973)
+
+#### Production Functions
+(See *References* for paper abbreviations.)
+
+##### 3/24 -- Production functions: Intro, OP and LP 
 - Notation from ACF.  
-##### 3/11 -- ACF
-##### Week of March 23 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
+##### 3/29 -- ACF
+##### 3/31 and 4/5 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
 ##### Problem Set -- Posted on Github Repo. 
 
-#### Dynamic Games
-##### Week of March 30 -- Bajari, Benkard, and Levin (2007)
-- Perhaps Ifrach and Weintraub (2017)
+#### Demand Approach to Trends in Market Power
+
+##### 4/7 -- Grieco, Murry, and Yurukoglu (wp)
 
 #### Endogenous Products
-##### Week of April 6 -- Radio 
+##### Week of 4/12 -- Radio 
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
-- Berry and Waldfogel (2001 QJE) [make slides for 2001 paper]
-##### Week of April 13
+- Berry and Waldfogel (2001 QJE) 
+##### Week of 4/19
 - Eizenberg (2014) 
 - Ciliberto, Murry, and Tamer (2020)
 
-#### Grab Bag
-- Ying Fan (2010, AER)
-- Wollman (2018, AER)
-- Common Ownership
+##### Week of 4/26 Empirical Matching Markets and Market Design
+- Agarwal and Somani (2020)
+- Laverde (wp)
+- Bhattacharya (2021)
 
-## References 
+
+##### Week of 5/1 -- TBD (Advanced Demand? / Dynamic Games?)
+
+
+
+## References
+
+### Market Power
+
+\* Demsetz, H. (1973). Industry Structure , Market Rivalry , and Public Policy. Journal of Law and Economics, 16(1), 1–9.
+
+\* Berry, Steven, Martin Gaynor, and Fiona Scott Morton. 2019. "Do Increasing Markups Matter? Lessons from Empirical Industrial Organization." Journal of Economic Perspectives, 33 (3): 44-68.
+
+\* Khan, Lina M. "Amazon's antitrust paradox." Yale lJ 126 (2016): 710.
+
 
 ### Production Functions 
 
@@ -97,6 +115,17 @@ Ying Fan and Chenyu Yang. ["Competition, Product Proliferation and Welfare: A St
 Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous and Selective Service Choices After Airline Mergers," working paper [here](http://econweb.umd.edu/~sweeting/SWEETING_airlinemerger_july2018.pdf). 
 
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
+
+
+### Advanced Demand Estimation
+
+\* Georee, M. S. (2008). Limited Information and Advertising in the U.S. Personal Computer Industry. Econometrica, 76(5), 1017–1074. https://doi.org/10.3982/ecta4158
+
+Grieco, Paul, Charles Murry, Joris Pinkse, Stephan Sagl. Efficient Estimation of Random Coefficients Demand Models using Product and Consumer Datasets. 2021. Working Paper. 
+
+Crawford, G., & Yurukoglu, A. (2016). The Welfare Effects of Bundling in Multichannel Television Markets. American Economic Review, 102(2), 643–685.
+
+Wildenbeest et al.
 
 
 ### Dynamics and Strategic Interactions
