@@ -1,1057 +1,331 @@
-<!DOCTYPE html>
-<html data-markdown-preview-plus-context="html-export">
-  <head>
-    <meta charset="utf-8" />
-    <title>ps2</title><script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    jax: ["input/TeX","output/HTML-CSS"],
-    extensions: ["[a11y]/accessibility-menu.js"],
-    'HTML-CSS': {
-      availableFonts: [],
-      webFont: 'TeX',
-      undefinedFamily: "serif",
-      mtextFontInherit: true,
-    },
-    TeX: {
-  "extensions": [
-    "AMSmath.js",
-    "AMSsymbols.js",
-    "noErrors.js",
-    "noUndefined.js"
-  ],
-  "Macros": {},
-  "equationNumbers": {}
-},
-    showMathMenu: true
-  });
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js"></script>
-    <style>.emoji {
-  max-width: 1em !important;
-}
-del {
-  text-decoration: none;
-  position: relative;
-}
-del::after {
-  border-bottom: 1px solid black;
-  content: '';
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-}
-ul.contains-task-list li.task-list-item {
-  position: relative;
-  list-style-type: none;
-}
-ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
-  position: absolute;
-  transform: translateX(-100%);
-  width: 30px;
-}
-span.critic.comment {
-  position: relative;
-}
-span.critic.comment::before {
-  content: '\1f4ac';
-  position: initial;
-}
-span.critic.comment > span {
-  display: none;
-}
-span.critic.comment:hover > span {
-  display: initial;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  border: 1px solid;
-  border-radius: 5px;
-  max-height: 4em;
-  overflow: auto;
-}
-span.critic.comment:focus > span {
-  display: initial;
-  text-decoration: underline;
-  position: initial;
-  top: auto;
-  left: auto;
-  border: initial;
-  border-radius: initial;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  background-color: transparent;
+<!DOCTYPE html><html><head>
+      <title>ps2</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/murryc/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.18/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
-body {
-  overflow: initial !important;
-  overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-  line-height: 1.6;
-  word-wrap: break-word;
-  padding: 30px;
-  font-size: 16px;
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
   color: #333;
-  background-color: #fff;
 }
-body > *:first-child {
-  margin-top: 0 !important;
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
 }
-body > *:last-child {
-  margin-bottom: 0 !important;
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
 }
-body a:not([href]) {
-  color: inherit;
-  text-decoration: none;
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
 }
-body .absent {
-  color: #c00;
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
 }
-body .anchor {
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
-  padding-right: 6px;
-  padding-left: 30px;
-  margin-left: -30px;
-}
-body .anchor:focus {
-  outline: none;
-}
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-  position: relative;
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-body h1 .octicon-link,
-body h2 .octicon-link,
-body h3 .octicon-link,
-body h4 .octicon-link,
-body h5 .octicon-link,
-body h6 .octicon-link {
-  display: none;
-  color: #000;
-  vertical-align: middle;
-}
-body h1:hover .anchor,
-body h2:hover .anchor,
-body h3:hover .anchor,
-body h4:hover .anchor,
-body h5:hover .anchor,
-body h6:hover .anchor {
-  padding-left: 8px;
-  margin-left: -30px;
-  text-decoration: none;
-}
-body h1:hover .anchor .octicon-link,
-body h2:hover .anchor .octicon-link,
-body h3:hover .anchor .octicon-link,
-body h4:hover .anchor .octicon-link,
-body h5:hover .anchor .octicon-link,
-body h6:hover .anchor .octicon-link {
-  display: inline-block;
-}
-body h1 tt,
-body h2 tt,
-body h3 tt,
-body h4 tt,
-body h5 tt,
-body h6 tt,
-body h1 code,
-body h2 code,
-body h3 code,
-body h4 code,
-body h5 code,
-body h6 code {
-  font-size: inherit;
-}
-body h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
-}
-body h1 .anchor {
-  line-height: 1;
-}
-body h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #eee;
-}
-body h2 .anchor {
-  line-height: 1;
-}
-body h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
-}
-body h3 .anchor {
-  line-height: 1.2;
-}
-body h4 {
-  font-size: 1.25em;
-}
-body h4 .anchor {
-  line-height: 1.2;
-}
-body h5 {
-  font-size: 1em;
-}
-body h5 .anchor {
-  line-height: 1.1;
-}
-body h6 {
-  font-size: 1em;
-  color: #777;
-}
-body h6 .anchor {
-  line-height: 1.1;
-}
-body p,
-body blockquote,
-body ul,
-body ol,
-body dl,
-body table,
-body pre {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-body hr {
-  height: 4px;
-  padding: 0;
-  margin: 16px 0;
-  background-color: #e7e7e7;
-  border: 0 none;
-}
-body ul,
-body ol {
-  padding-left: 2em;
-}
-body ul.no-list,
-body ol.no-list {
-  padding: 0;
-  list-style-type: none;
-}
-body ul ul,
-body ul ol,
-body ol ol,
-body ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-body li > p {
-  margin-top: 16px;
-}
-body dl {
-  padding: 0;
-}
-body dl dt {
-  padding: 0;
-  margin-top: 16px;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: bold;
-}
-body dl dd {
-  padding: 0 16px;
-  margin-bottom: 16px;
-}
-body blockquote {
-  padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
-}
-body blockquote > :first-child {
-  margin-top: 0;
-}
-body blockquote > :last-child {
-  margin-bottom: 0;
-}
-body table {
+  background-color: transparent;
   display: block;
   width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-}
-body table th {
-  font-weight: bold;
-}
-body table th,
-body table td {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
-}
-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-body img {
-  max-width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body .emoji {
-  max-width: none;
-}
-body span.frame {
-  display: block;
-  overflow: hidden;
-}
-body span.frame > span {
-  display: block;
-  float: left;
-  width: auto;
-  padding: 7px;
-  margin: 13px 0 0;
-  overflow: hidden;
-  border: 1px solid #ddd;
-}
-body span.frame span img {
-  display: block;
-  float: left;
-}
-body span.frame span span {
-  display: block;
-  padding: 5px 0 0;
-  clear: both;
-  color: #333;
-}
-body span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both;
-}
-body span.align-center > span {
-  display: block;
-  margin: 13px auto 0;
-  overflow: hidden;
-  text-align: center;
-}
-body span.align-center span img {
-  margin: 0 auto;
-  text-align: center;
-}
-body span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both;
-}
-body span.align-right > span {
-  display: block;
-  margin: 13px 0 0;
-  overflow: hidden;
-  text-align: right;
-}
-body span.align-right span img {
-  margin: 0;
-  text-align: right;
-}
-body span.float-left {
-  display: block;
-  float: left;
-  margin-right: 13px;
-  overflow: hidden;
-}
-body span.float-left span {
-  margin: 13px 0 0;
-}
-body span.float-right {
-  display: block;
-  float: right;
-  margin-left: 13px;
-  overflow: hidden;
-}
-body span.float-right > span {
-  display: block;
-  margin: 13px auto 0;
-  overflow: hidden;
-  text-align: right;
-}
-body code,
-body tt {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 3px;
-}
-body code:before,
-body tt:before,
-body code:after,
-body tt:after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
-}
-body code br,
-body tt br {
-  display: none;
-}
-body del code {
-  text-decoration: inherit;
-}
-body pre > code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-body .highlight {
-  margin-bottom: 16px;
-}
-body .highlight pre,
-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f7f7f7;
-  border-radius: 3px;
-}
-body .highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-body pre {
-  word-wrap: normal;
-}
-body pre code,
-body pre tt {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
-}
-body pre code:before,
-body pre tt:before,
-body pre code:after,
-body pre tt:after {
-  content: normal;
-}
-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
-}
-span.critic.comment > span {
-  background-color: #fff;
-}
-a {
-  color: #337ab7;
 }
 
-.bracket-matcher .region {
-  border-bottom: 1px dotted lime;
+pre[data-line] .line-highlight {
   position: absolute;
-}
-.line-number.bracket-matcher.bracket-matcher {
-  color: #373b41;
-  background-color: #e0e0e0;
-}
-
-.spell-check-misspelling .region {
-  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
-}
-.spell-check-corrections {
-  width: 25em !important;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
 }
 
-pre.editor-colors {
-  background-color: #ffffff;
-  color: #1d1f21;
-}
-pre.editor-colors .wrap-guide {
-  background-color: #c5c8c6;
-}
-pre.editor-colors .indent-guide {
-  color: #c5c8c6;
-}
-pre.editor-colors .invisible-character {
-  color: #c5c8c6;
-}
-pre.editor-colors .gutter {
-  background-color: #ffffff;
-  color: #b4b7b4;
-}
-pre.editor-colors .gutter .line-number {
-  padding: 0 0.25em 0 0.5em;
-  -webkit-font-smoothing: antialiased;
-}
-pre.editor-colors .gutter .line-number.cursor-line {
-  background-color: #e0e0e0;
-  color: #373b41;
-}
-pre.editor-colors .gutter .line-number.cursor-line-no-selection {
-  color: #373b41;
-}
-pre.editor-colors .gutter .line-number.folded,
-pre.editor-colors .gutter .line-number:after,
-pre.editor-colors .fold-marker:after {
-  color: #b4b7b4;
-}
-pre.editor-colors .invisible {
-  color: #1d1f21;
-}
-pre.editor-colors .cursor {
-  color: #1d1f21;
-}
-pre.editor-colors .selection .region {
-  background-color: #e0e0e0;
-}
-pre.editor-colors .bracket-matcher .region {
-  border-color: #b4b7b4;
-}
-.syntax--comment {
-  color: #969896;
-}
-.syntax--comment .syntax--markup.syntax--link {
-  color: #969896;
-}
-.syntax--entity.syntax--name.syntax--type {
-  color: #f0c674;
-}
-.syntax--entity.syntax--other.syntax--inherited-class {
-  color: #b5bd68;
-}
-.syntax--keyword {
-  color: #b294bb;
-}
-.syntax--keyword.syntax--control {
-  color: #b294bb;
-}
-.syntax--keyword.syntax--operator {
-  color: #1d1f21;
-}
-.syntax--keyword.syntax--other.syntax--special-method {
-  color: #81a2be;
-}
-.syntax--keyword.syntax--other.syntax--unit {
-  color: #de935f;
-}
-.syntax--storage {
-  color: #b294bb;
-}
-.syntax--constant {
-  color: #de935f;
-}
-.syntax--constant.syntax--character.syntax--escape {
-  color: #8abeb7;
-}
-.syntax--constant.syntax--numeric {
-  color: #de935f;
-}
-.syntax--constant.syntax--other.syntax--color {
-  color: #8abeb7;
-}
-.syntax--constant.syntax--other.syntax--symbol {
-  color: #8abeb7;
-}
-.syntax--variable {
-  color: #cc6666;
-}
-.syntax--variable.syntax--interpolation {
-  color: #a3685a;
-}
-.syntax--variable.syntax--parameter.syntax--function {
-  color: #1d1f21;
-}
-.syntax--invalid.syntax--illegal {
-  background-color: #cc6666;
-  color: #ffffff;
-}
-.syntax--string {
-  color: #b5bd68;
-}
-.syntax--string.syntax--regexp {
-  color: #8abeb7;
-}
-.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
-  color: #f0c674;
-}
-.syntax--string.syntax--other.syntax--link {
-  color: #cc6666;
-}
-.syntax--punctuation.syntax--definition.syntax--parameters,
-.syntax--punctuation.syntax--definition.syntax--array {
-  color: #1d1f21;
-}
-.syntax--punctuation.syntax--definition.syntax--heading,
-.syntax--punctuation.syntax--definition.syntax--identity {
-  color: #81a2be;
-}
-.syntax--punctuation.syntax--definition.syntax--bold {
-  color: #f0c674;
-  font-weight: bold;
-}
-.syntax--punctuation.syntax--definition.syntax--italic {
-  color: #b294bb;
-  font-style: italic;
-}
-.syntax--punctuation.syntax--section.syntax--embedded {
-  color: #a3685a;
-}
-.syntax--punctuation.syntax--section.syntax--method,
-.syntax--punctuation.syntax--section.syntax--class,
-.syntax--punctuation.syntax--section.syntax--inner-class {
-  color: #1d1f21;
-}
-.syntax--support.syntax--class {
-  color: #f0c674;
-}
-.syntax--support.syntax--function {
-  color: #8abeb7;
-}
-.syntax--support.syntax--function.syntax--any-method {
-  color: #81a2be;
-}
-.syntax--entity.syntax--name.syntax--function {
-  color: #81a2be;
-}
-.syntax--entity.syntax--name.syntax--class,
-.syntax--entity.syntax--name.syntax--type.syntax--class {
-  color: #f0c674;
-}
-.syntax--entity.syntax--name.syntax--section {
-  color: #81a2be;
-}
-.syntax--entity.syntax--name.syntax--tag {
-  color: #cc6666;
-}
-.syntax--entity.syntax--other.syntax--attribute-name {
-  color: #de935f;
-}
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
-  color: #81a2be;
-}
-.syntax--meta.syntax--class {
-  color: #f0c674;
-}
-.syntax--meta.syntax--class.syntax--body {
-  color: #1d1f21;
-}
-.syntax--meta.syntax--link {
-  color: #de935f;
-}
-.syntax--meta.syntax--method-call,
-.syntax--meta.syntax--method {
-  color: #1d1f21;
-}
-.syntax--meta.syntax--require {
-  color: #81a2be;
-}
-.syntax--meta.syntax--selector {
-  color: #b294bb;
-}
-.syntax--meta.syntax--separator {
-  background-color: #373b41;
-  color: #1d1f21;
-}
-.syntax--meta.syntax--tag {
-  color: #1d1f21;
-}
-.syntax--none {
-  color: #1d1f21;
-}
-.syntax--markup.syntax--bold {
-  color: #de935f;
-  font-weight: bold;
-}
-.syntax--markup.syntax--changed {
-  color: #b294bb;
-}
-.syntax--markup.syntax--deleted {
-  color: #cc6666;
-}
-.syntax--markup.syntax--italic {
-  color: #b294bb;
-  font-style: italic;
-}
-.syntax--markup.syntax--heading {
-  color: #cc6666;
-}
-.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-  color: #81a2be;
-}
-.syntax--markup.syntax--link {
-  color: #81a2be;
-}
-.syntax--markup.syntax--inserted {
-  color: #b5bd68;
-}
-.syntax--markup.syntax--quote {
-  color: #de935f;
-}
-.syntax--markup.syntax--raw {
-  color: #b5bd68;
-}
-.syntax--source.syntax--gfm .syntax--markup {
-  -webkit-font-smoothing: auto;
-}
-.syntax--source.syntax--gfm .syntax--link .syntax--entity {
-  color: #8abeb7;
-}
-.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
-  color: #b294bb;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
-  color: #cc6666;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
-  color: #cc6666;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
-  color: #b5bd68;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
-  color: #8abeb7;
-}
-/*
-   This defines styling rules for syntax classes.
-
-   See the naming conventions for a list of syntax classes:
-   https://flight-manual.atom.io/hacking-atom/sections/syntax-naming-conventions
-
-   When styling rules conflict:
-   - The last rule overrides previous rules.
-   - The rule with most classes and pseudo-classes overrides the last rule.
-*/
-.syntax--keyword {
-  color: #b294bb;
-}
-.syntax--keyword.syntax--storage {
-  color: #b294bb;
-}
-.syntax--keyword.syntax--type {
-  color: #f0c674;
-}
-.syntax--keyword.syntax--operator {
-  color: #b294bb;
-}
-.syntax--keyword.syntax--function {
-  color: #cc6666;
-}
-.syntax--keyword.syntax--variable {
-  color: #cc6666;
-}
-.syntax--keyword.syntax--symbolic {
-  color: #1d1f21;
-}
-.syntax--entity {
-  color: #1d1f21;
-}
-.syntax--entity.syntax--support {
-  color: #cc6666;
-}
-.syntax--entity.syntax--decorator:last-child {
-  color: #81a2be;
-}
-.syntax--entity.syntax--label {
-  text-decoration: underline;
-}
-.syntax--entity.syntax--function {
-  color: #81a2be;
-}
-.syntax--entity.syntax--function.syntax--support {
-  color: #8abeb7;
-}
-.syntax--entity.syntax--operator {
-  color: #81a2be;
-}
-.syntax--entity.syntax--operator.syntax--symbolic {
-  color: #1d1f21;
-}
-.syntax--entity.syntax--type {
-  color: #f0c674;
-}
-.syntax--entity.syntax--tag {
-  color: #cc6666;
-}
-.syntax--entity.syntax--attribute {
-  color: #de935f;
-}
-.syntax--punctuation {
-  color: #1d1f21;
-}
-.syntax--punctuation.syntax--embedded {
-  color: #a3685a;
-}
-.syntax--string {
-  color: #b5bd68;
-}
-.syntax--string.syntax--immutable {
-  color: #b5bd68;
-}
-.syntax--string.syntax--part {
-  color: #8abeb7;
-}
-.syntax--string.syntax--interpolation {
-  color: #a3685a;
-}
-.syntax--string.syntax--regexp {
-  color: #b5bd68;
-}
-.syntax--string.syntax--regexp.syntax--language {
-  color: #b294bb;
-}
-.syntax--string.syntax--regexp.syntax--variable {
-  color: #81a2be;
-}
-.syntax--string.syntax--regexp.syntax--punctuation {
-  color: #a3685a;
-}
-.syntax--constant {
-  color: #de935f;
-}
-.syntax--constant.syntax--character {
-  color: #b5bd68;
-}
-.syntax--constant.syntax--character.syntax--escape {
-  color: #b5bd68;
-}
-.syntax--constant.syntax--character.syntax--code {
-  color: #8abeb7;
-}
-.syntax--text {
-  color: #1d1f21;
-}
-.syntax--markup.syntax--heading {
-  color: #cc6666;
-}
-.syntax--markup.syntax--list.syntax--punctuation {
-  color: #cc6666;
-}
-.syntax--markup.syntax--bold {
-  color: #de935f;
-  font-weight: bold;
-}
-.syntax--markup.syntax--italic {
-  color: #b294bb;
-  font-style: italic;
-}
-.syntax--markup.syntax--raw {
-  color: #b5bd68;
-}
-.syntax--markup.syntax--link {
-  color: #81a2be;
-}
-.syntax--markup.syntax--alt {
-  color: #8abeb7;
-}
-.syntax--markup.syntax--inserted {
-  color: #b5bd68;
-}
-.syntax--markup.syntax--inserted .syntax--punctuation {
-  color: #b5bd68;
-}
-.syntax--markup.syntax--inserted {
-  color: #b5bd68;
-}
-.syntax--markup.syntax--inserted .syntax--punctuation {
-  color: #b5bd68;
-}
-.syntax--markup.syntax--deleted {
-  color: #cc6666;
-}
-.syntax--markup.syntax--deleted .syntax--punctuation {
-  color: #cc6666;
-}
-.syntax--markup.syntax--changed {
-  color: #b294bb;
-}
-.syntax--markup.syntax--changed .syntax--punctuation {
-  color: #b294bb;
-}
-.syntax--markup.syntax--commented {
-  color: #969896;
-}
-.syntax--markup.syntax--commented .syntax--punctuation {
-  color: #969896;
-}
-.syntax--comment {
-  color: #969896;
-}
-.syntax--comment.syntax--caption {
-  color: #9ea09e;
-  font-weight: bold;
-}
-.syntax--comment.syntax--term {
-  color: #a8aaa8;
-}
-.syntax--comment.syntax--punctuation {
-  color: #969896;
-  font-weight: normal;
-}
-.syntax--invalid:not(.syntax--punctuation).syntax--illegal {
-  background-color: #cc6666;
-  color: #ffffff;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--function {
-  color: #1d1f21;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--function.syntax--support {
-  color: #8abeb7;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--selector {
-  color: #de935f;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--selector.syntax--tag {
-  color: #cc6666;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--selector.syntax--id {
-  color: #81a2be;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--property {
-  color: #1d1f21;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--variable {
-  color: #cc6666;
-}
-.syntax--source.syntax--css .syntax--entity.syntax--keyframe {
-  color: #cc6666;
-}
-.syntax--source.syntax--css .syntax--constant {
-  color: #1d1f21;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--support {
-  color: #de935f;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--numeric {
-  color: #de935f;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--media {
-  color: #de935f;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--offset {
-  color: #1d1f21;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--offset.syntax--unit {
-  color: #1d1f21;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--color {
-  color: #8abeb7;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--color.syntax--support {
-  color: #de935f;
-}
-.syntax--source.syntax--css .syntax--constant.syntax--attribute-value {
-  color: #b5bd68;
-}
-.syntax--source.syntax--css .syntax--punctuation.syntax--selector {
-  color: #de935f;
-}
-.syntax--source.syntax--css .syntax--punctuation.syntax--selector.syntax--wildcard {
-  color: #cc6666;
-}
-.syntax--source.syntax--css .syntax--punctuation.syntax--selector.syntax--id {
-  color: #81a2be;
-}
-.syntax--source.syntax--css .syntax--punctuation.syntax--selector.syntax--attribute {
-  color: #1d1f21;
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
 }
 
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-</style>
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
-  </head>
-  <body>
-    <h2>Problem Set 2: Trucks</h2>
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h2 class="mume-header" id="problem-set-2-trucks">Problem Set 2: Trucks</h2>
+
 <p>Date assigned: April 20, 2021.<br>
 Due Date: Wednesday, May 5 at midnight.</p>
-<p>The data is in trucks.csv. It is a pull from the dataset from my paper on car markups with Paul Grieco and Ali Yurukoglu. It includes all of the “trucks” offered for sale in the U.S. from 1980 to 2018.</p>
-<p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">make</code> Make of car (ex. Honda).<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">model</code> Make and model of car (ex. Honda Accord).<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">parent</code> Ultimate owner/manufactuer (ex. VW owns VW and Audi and Porsche).<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sales</code> Sales.<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">msrp</code> Price.<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">curbweight</code> weight of car with no passengers or cargo.<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">footprint</code> width multiplied by length in square inches.<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">hp</code> horsepower of car.<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">mpg</code> Fuel economy rating of the car.
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">marketsize</code> scaled number of households in U.S.<br>
-<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">yearssincedesign</code> Number of years since the last styling redesign of the truck. Zero = the first year of the new design.</p>
+<p>The data is in trucks.csv. It is a pull from the dataset from my paper on car markups with Paul Grieco and Ali Yurukoglu. It includes all of the &quot;trucks&quot; offered for sale in the U.S. from 1980 to 2018.</p>
+<p><code>make</code> Make of car (ex. Honda).<br>
+<code>model</code> Make and model of car (ex. Honda Accord).<br>
+<code>parent</code> Ultimate owner/manufacturer (ex. VW owns VW and Audi and Porsche).<br>
+<code>sales</code> Sales.<br>
+<code>msrp</code> Price.<br>
+<code>curbweight</code> weight of car with no passengers or cargo.<br>
+<code>footprint</code> width multiplied by length in square inches.<br>
+<code>hp</code> horsepower of car.<br>
+<code>mpg</code> Fuel economy rating of the car.<br>
+<code>marketsize</code> scaled number of households in U.S.<br>
+<code>yearssincedesign</code> Number of years since the last styling redesign of the truck. Zero = the first year of the new design.</p>
 <p>The goal of the problem set it to estimate the fixed costs of redesigning a truck. Cars are redesigned roughly every 5-7 years, and this includes a change to the styling and update to mechanical components.</p>
 <h3>1. Data description.</h3>
-<p>(i) How many years pass, on average between re-design?
-(ii) Present graphical reduced form evidence that redesign increases sales.
+<p>(i) How many years pass, on average between re-design?<br>
+(ii) Present graphical reduced form evidence that redesign increases sales.<br>
 (ii) Plot the number of models and number of redesigns per year.</p>
 <h3>2. Estimate demand for trucks.</h3>
 <p>Estimate a simple logit demand for truck with the following specification for indirect utility.</p>
-<span class="math display-math"><script type="math/tex; mode=display">u_{ijt} = X_{jt} β + αp_{jt} + ξ_{jt} + ε_{jt}
-</script></span>
-<p>where <span class="math inline-math"><script type="math/tex">X</script></span> includes <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">log(cubweight)</code>, <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">log(footprint)</code>, <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">log(hp)</code>, and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">yearssincedesign</code>, <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">log(mpg)</code>, as well as <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">make</code> dummies and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">year</code> dummies. You can estiamte the parameters of this model using OLS – see Berry (1994) for details if you do not recall from IO I. (Typically, we would need to IV for price, but here the make and year dummies seem to do a decent job and getting us “reasonable” estimates of elasticities, so lets just stick with this empirical strategy.)</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>X</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mi>&#x3B2;</mi><mo>+</mo><mi>&#x3B1;</mi><msub><mi>p</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>&#x3BE;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>&#x3B5;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ijt} = X_{jt} &#x3B2; + &#x3B1;p_{jt} + &#x3BE;_{jt} + &#x3B5;_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">ij</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05278em;">&#x3B2;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8694379999999999em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04601em;">&#x3BE;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal">&#x3B5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> includes <code>log(cubweight)</code>, <code>log(footprint)</code>, <code>log(hp)</code>, and <code>yearssincedesign</code>, <code>log(mpg)</code>, as well as <code>make</code> dummies and <code>year</code> dummies. You can estiamte the parameters of this model using OLS -- see Berry (1994) for details if you do not recall from IO I. (Typically, we would need to IV for price, but here the make and year dummies seem to do a decent job and getting us &quot;reasonable&quot; estimates of elasticities, so lets just stick with this empirical strategy.)</p>
 <p>i. Report the coefficients in a table.<br>
 ii. Report the average own-price elasticity of demand.<br>
 iii. Graph average markups across time.</p>
 <h3>3. Estimate a marginal cost equation</h3>
-<span class="math display-math"><script type="math/tex; mode=display">log(mc_{jt}) = [Z_{jt} ξ_{jt}] γ +  ω_{jt}
-</script></span>
-<p>and also include make and year effects, like in demand. <span class="math inline-math"><script type="math/tex">Z</script></span> should include everything in X except <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">yearssincedesign</code>.</p>
-<p>ii. Report the results.
-i. Why do I label the error in this regression as <span class="math inline-math"><script type="math/tex">ω</script></span>?</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>m</mi><msub><mi>c</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><msub><mi>Z</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mi>&#x3B3;</mi><mo>+</mo><msub><mi>&#x3C9;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">log(mc_{jt}) = Z_{jt} &#x3B3; +  &#x3C9;_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05556em;">&#x3B3;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C9;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>and also include make and year effects, like in demand. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi></mrow><annotation encoding="application/x-tex">Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span></span></span></span> should include everything in X except <code>yearssincedesign</code>, plus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x3BE;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\xi_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04601em;">&#x3BE;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>.</p>
+<p>ii. Report the results.<br>
+i. Why do I label the error in this regression as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3C9;</mi></mrow><annotation encoding="application/x-tex">&#x3C9;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C9;</span></span></span></span>?</p>
 <h3>4. Estimate fixed costs of redesign.</h3>
-<p>Estimate fixed costs of redesign by using the revealed preference approach a la Eizenberg (2014) and the following necessary condition</p>
-<span class="math display-math"><script type="math/tex; mode=display">\mathbb{E}π_{jt}(R_{jt}=1;X,p,R) ≥ \mathbb{E}π_{jt}(R_{jt}=0;X,p,R)
-</script></span>
-<p>where <span class="math inline-math"><script type="math/tex">R</script></span> denotes the redesign status of the car and the expectation is taken over ξ and ω.</p>
-<p>In order to operationalize these necessary conditions, assume that counterfactual redesign decisions include delaying redesign by one year or moving redesign up by one year. Note: each time a truck gets redesigned its <span class="math inline-math"><script type="math/tex">R</script></span> variable changes, but also the other <span class="math inline-math"><script type="math/tex">X</script></span>'s tend to have non-trival differences.</p>
-<p>You will need to compute expected profits from the empirical distribution of ξ and ω. Use 10 draws from the joint distribution. (In practice, this is too few. But I do not want this to be a bottleneck.)</p>
-<p>Estimate lower and upper bounds for <span class="math inline-math"><script type="math/tex">\bar{F}</script></span> for the following fixed costs specification,</p>
-<span class="math display-math"><script type="math/tex; mode=display">F_{jt} =  \bar{F} + \nu_{jt}.
-</script></span>
-<p>(i) Report your upper and lower bounds. You do not need report confidence intervals, as in Eizenberg (2014) eq. (14).<br>
-(ii) Is the nature of selection different in this case than in the setting of Eizenberg? Why or why not?
-(iii) Consider that in reality all truck manufacturers always redesigned as quickly as possible? In other words, the option to redesign 1 year earlier is not a feasible option and cannot be used to estimate <span class="math inline-math"><script type="math/tex">\bar{F}</script></span>. How would that change your results? Are the additional issues that arise?</p>
+<p>Eizenberg(2014) uses a revealed preference approach to estimate fixed cost bounds. The idea is that given every other choice (by all other firms in period t and in all other periods), a parent firm has no profitable single deviation. In this section we will use the same approach to estimate fixed cost bounds for redesigning a truck.</p>
+<p>If a firm chooses to redesign a truck j in year t, the following necessary condition must hold:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="double-struck">E</mi><msub><mi>&#x3C0;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo stretchy="false">(</mo><msub><mi>R</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>0</mn><mo separator="true">;</mo><mi>X</mi><mo separator="true">,</mo><mi>p</mi><mo separator="true">,</mo><msub><mi>R</mi><mrow><mo>&#x2212;</mo><mi>j</mi><mi>t</mi></mrow></msub><mo separator="true">,</mo><mi>&#x3B3;</mi><mo separator="true">,</mo><mi>&#x3B1;</mi><mo separator="true">,</mo><mi>&#x3B2;</mi><mo stretchy="false">)</mo><mo>&#x2264;</mo><mi mathvariant="double-struck">E</mi><msub><mi>&#x3C0;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo stretchy="false">(</mo><msub><mi>R</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mo separator="true">;</mo><mi>X</mi><mo separator="true">,</mo><mi>p</mi><mo separator="true">,</mo><msub><mi>R</mi><mrow><mo>&#x2212;</mo><mi>j</mi><mi>t</mi></mrow></msub><mo separator="true">,</mo><mi>&#x3B3;</mi><mo separator="true">,</mo><mi>&#x3B1;</mi><mo separator="true">,</mo><mi>&#x3B2;</mi><mo stretchy="false">)</mo><mo>&#x2212;</mo><msub><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathbb{E}&#x3C0;_{jt}(R_{jt}=0;X,p,R_{-jt}, \gamma, \alpha, \beta)  \leq \mathbb{E}&#x3C0;_{jt}(R_{jt}=1;X,p,R_{-jt},  \gamma, \alpha, \beta) - F_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathbb">E</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C0;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord">0</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">&#x2212;</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">&#x3B3;</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">&#x3B2;</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2264;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathbb">E</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C0;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord">1</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">&#x2212;</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">&#x3B3;</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">&#x3B2;</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">R_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> is the decision to redesign truck j at time t, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mo>&#x2212;</mo><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">R_{-jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">&#x2212;</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> has the redesign decisions for all other products.  The expectation is over the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BE;</mi></mrow><annotation encoding="application/x-tex">\xi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.04601em;">&#x3BE;</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3C9;</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C9;</span></span></span></span> distributions, which we estimated in sections 2 and 3.</p>
+<p>If truck <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span> from firm <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> is redesigned in year <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span></span></span></span>, estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>F</mi><mo>&#x2C9;</mo></mover><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\bar{F}_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">&#x2C9;</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> in the following steps:</p>
+<ol>
+<li>Take a random draw from the estimated vector of (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x3BE;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\xi_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04601em;">&#x3BE;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x3C9;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\omega_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C9;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>).</li>
+<li>For this draw, estimate variable profits for firm <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> in year <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span></span></span></span> at the observed equilibrium (i.e. the observed redesign decisions).</li>
+<li>Keeping the redesign decisions for all other trucks constant, set the redesign decision for truck <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span> to 0, and use the pricing FOCs to re-estimate the shares and pricing equilibrium. Note: each time a truck gets redesigned its <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> variable changes, but also the other <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>&apos;s tend to have non-trival differences.</li>
+<li>Calculate profits at the equilibrium in step 3.</li>
+<li>Calculate the difference between estimated variable profits in 2 and 3. Let&apos;s call this <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow><mi>i</mi></msubsup></mrow><annotation encoding="application/x-tex">F^i_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.219436em;vertical-align:-0.394772em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-2.441336em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.394772em;"><span></span></span></span></span></span></span></span></span></span>.</li>
+</ol>
+<p>Repeat the above steps for 10 draws of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x3BE;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\xi_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04601em;">&#x3BE;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&#x3C9;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\omega_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">&#x3C9;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> (In practice, this is too few. But I do not want this to be a bottleneck). Calculate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>10</mn><mo stretchy="false">(</mo><msub><mo>&#x2211;</mo><mi>i</mi></msub><msubsup><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow><mi>i</mi></msubsup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F_{jt} = 1/10(\sum_i F^i_{jt})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.219436em;vertical-align:-0.394772em;"></span><span class="mord">1/10</span><span class="mopen">(</span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">&#x2211;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16195399999999993em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-2.441336em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.394772em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>.</p>
+<p>Similarly, estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><msub><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo stretchy="true">&#x203E;</mo></munder></mrow><annotation encoding="application/x-tex">\underline{F_{jt}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.169438em;vertical-align:-0.4861080000000001em;"></span><span class="mord underline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6833299999999999em;"><span style="top:-2.553892em;"><span class="pstrut" style="height:3em;"></span><span class="underline-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.4861080000000001em;"><span></span></span></span></span></span></span></span></span> when a firm did not choose to redesign its truck <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span> year <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="bold">but</mtext><mtext>&#xA0;</mtext><mtext mathvariant="bold">did</mtext><mtext>&#xA0;</mtext><mtext mathvariant="bold">so</mtext><mtext>&#xA0;</mtext><mtext mathvariant="bold">in</mtext><mtext>&#xA0;</mtext><mtext mathvariant="bold">t+1</mtext></mrow><annotation encoding="application/x-tex">\textbf{but did so in t+1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8277699999999999em;vertical-align:-0.13333em;"></span><span class="mord text"><span class="mord textbf">but&#xA0;did&#xA0;so&#xA0;in&#xA0;t+1</span></span></span></span></span>, i.e. the counterfactual decision is to move the redesign decision up by one year. For example, estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><msub><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo stretchy="true">&#x203E;</mo></munder></mrow><annotation encoding="application/x-tex">\underline{F_{jt}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.169438em;vertical-align:-0.4861080000000001em;"></span><span class="mord underline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6833299999999999em;"><span style="top:-2.553892em;"><span class="pstrut" style="height:3em;"></span><span class="underline-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.4861080000000001em;"><span></span></span></span></span></span></span></span></span> for 2014 if a firm chose to redesign truck <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span> in 2015.</p>
+<p>Our goal is to estimate lower and upper bounds for F for the following fixed costs specification:<br>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo>=</mo><mi>F</mi><mo>+</mo><msub><mi>&#x3BD;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">F_{jt} =  F + \nu_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.06366em;">&#x3BD;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.06366em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>Note that there is a selection problem, i.e. conditional on observed decisions, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">(</mo><msub><mi>&#x3BD;</mi><mrow><mi>j</mi><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo mathvariant="normal">&#x2260;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(\nu_{jt}) \neq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.06366em;">&#x3BD;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.06366em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mord"><span class="mrel">&#xE020;</span></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>. Because of this, you cannot use the mean of estimated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>F</mi><mo>&#x2C9;</mo></mover><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\bar{F}_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">&#x2C9;</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>s to estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>F</mi><mo>&#x2C9;</mo></mover></mrow><annotation encoding="application/x-tex">\bar{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201099999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">&#x2C9;</span></span></span></span></span></span></span></span></span></span>, and the mean of estimated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><munder accentunder="true"><mi>F</mi><mo stretchy="true">&#x203E;</mo></munder><mrow><mi>j</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\underline{F}_{jt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0691380000000001em;vertical-align:-0.38580800000000004em;"></span><span class="mord"><span class="mord underline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.84em;"><span class="pstrut" style="height:3em;"></span><span class="underline-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.20000000000000007em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.21196399999999993em;"><span style="top:-2.4503000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.38580800000000004em;"><span></span></span></span></span></span></span></span></span></span>s to estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><mi>F</mi><mo stretchy="true">&#x203E;</mo></munder></mrow><annotation encoding="application/x-tex">\underline{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:-0.20000000000000007em;"></span><span class="mord underline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.84em;"><span class="pstrut" style="height:3em;"></span><span class="underline-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.20000000000000007em;"><span></span></span></span></span></span></span></span></span>. Solve this selection problem as in Eizenberg(2014) to estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>F</mi><mo>&#x2C9;</mo></mover></mrow><annotation encoding="application/x-tex">\bar{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201099999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">&#x2C9;</span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><mi>F</mi><mo stretchy="true">&#x203E;</mo></munder></mrow><annotation encoding="application/x-tex">\underline{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8833300000000001em;vertical-align:-0.20000000000000007em;"></span><span class="mord underline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.84em;"><span class="pstrut" style="height:3em;"></span><span class="underline-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.20000000000000007em;"><span></span></span></span></span></span></span></span></span>.</p>
+<p>(i) Report your upper and lower bounds. You do not need report confidence intervals, as in Eizenberg (2014) eq. (14).</p>
+<p>(ii) Is the nature of selection different in this case than in the setting of Eizenberg? Why or why not?</p>
+<p>(iii) Consider that in reality all truck manufacturers always redesigned as quickly as possible? In other words, the option to redesign 1 year earlier is not a feasible option and cannot be used to estimate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>F</mi><mo>&#x2C9;</mo></mover></mrow><annotation encoding="application/x-tex">\bar{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201099999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">&#x2C9;</span></span></span></span></span></span></span></span></span></span>. How would that change your results? Are the additional issues that arise?</p>
 
-  </body>
-</html>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
