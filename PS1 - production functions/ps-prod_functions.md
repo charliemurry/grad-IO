@@ -5,7 +5,7 @@
 *Prof. Charlie Murry*  
 *Due: April 11, 2022*    
 
-I posted a dataset: firms-cleaned.dta. This is data from a survey of firms in Ghana starting in the 1991. An observation is a  **firm-year**. I describe the dataset in more detail in a dataset readme file.
+I posted a dataset: ```firms-cleaned.dta```. This is data from a survey of firms in Ghana starting in the 1991. An observation is a  **firm-year**. I describe the dataset in more detail in a dataset readme file.
 
 When using the data, please use real values (real values are indexed to 1991 in the local currency) and use the value added measurement of output (variable already created), which is the value output minus the cost of materials.
 
@@ -62,4 +62,4 @@ Plot the average markup as a function of time. Regress markups on export status.
 
 ## Selection
 
-What bias might be caused by selection out of the sample? Show me a picture that suggests that selection is or isn't a problem. 
+What bias might be caused by selection in/out of the sample? Argue that this is or isn't a problem using descriptive statics or visualizations. 
