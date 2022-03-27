@@ -9,39 +9,35 @@ _This is the first semester of this version of the course, so I will roll slides
 
 ## Class Schedule
 
-#### Market Power
-
-##### 3/22 -- Berry, Gaynor, Scott Morton (2019) and Demsetz (1973)
-
 #### Production Functions
 (See *References* for paper abbreviations.)
 
-##### 3/24 -- Production functions: Intro, OP and LP 
+##### 3/17 -- Production functions: Intro, OP and LP, and ACF
 - Notation from ACF.  
-##### 3/29 -- ACF
-##### 3/31 and 4/5 -- Markups: De Loecker and Warzynski (2012) and DeLoecker, Ekhout, and Unger (2018).
+
+#### Production Functions and Market Power
+
+##### 3/25 -- Berry, Gaynor, Scott Morton (2019); Demsetz (1973); DeLoecker and Warzynski (2012); DeLoecker, Echout, Unger (2020)
 ##### Problem Set -- Posted on Github Repo. 
 
-#### Demand Approach to Trends in Market Power
-
-##### 4/7 -- Grieco, Murry, and Yurukoglu (wp)
-
 #### Endogenous Products
-##### Week of 4/12 -- Radio 
+#####  4/1 -- Radio and PCs
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
-- Berry and Waldfogel (2001 QJE) 
-##### Week of 4/19
+<!-- - Berry and Waldfogel (2001 QJE)  -->
 - Eizenberg (2014) 
+
+##### 4/8 Finish Endogenous Products and Empirical Matching
 - Ciliberto, Murry, and Tamer (2020)
-
-##### Week of 4/26 Empirical Matching Markets and Market Design
 - Agarwal and Somani (2020)
+
+
+<!-- ##### Week of 4/26 Empirical Matching Markets and Market Design
 - Laverde (wp)
-- Bhattacharya (2021)
+- Bhattacharya (2021) -->
 
 
-##### Week of 5/1 -- TBD (Advanced Demand? / Dynamic Games?)
+<!-- ##### Week of 5/1 -- TBD (Advanced Demand? / Dynamic Games?) -->
 
 
 
