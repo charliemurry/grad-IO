@@ -1,12 +1,12 @@
 ---
-title: "Problem Set - 3"
+title: "Problem Set - 2"
 output: pdf_document
 ---
 
 ## Problem Set 3: Endogenous Trucks
 
-Date assigned: April 4, 2022.  
-Date due: April 19, 2022.
+Date assigned: April 19, 2022.  
+Date due: May 5, 2022.
 
 The data is in trucks.csv. It is a slice from the dataset from the paper ```The Evolution of Market Power in the U.S. Automobile Industry``` by Paul Grieco, Charlie Murry, and Ali Yurukoglu. It includes all of the "trucks" offered for sale in the U.S. from 1980 to 2018. 
 
