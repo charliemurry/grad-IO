@@ -17,6 +17,14 @@ Annual Review of Economics, 2020
 
 ---
 
+#### other resources
+
+IO Handbook chapter by Budish and Agarwal
+
+etc.
+
+---
+
 ### School Assignment
 
 - Many countries/districts assign students to schools using an assignment mechanism. 
@@ -54,7 +62,7 @@ Students: $i\in\mathcal{I}$
 Schools/programs:  $j\in\mathcal{J} = {0,1...J}$
 
 $$ \nu_{ij} = \nu (x_j,z_i,\xi_j,\gamma_i,\varepsilon_{ij}) - d_{ij}$$
-with $\nu_{ij} = 0$
+with $\nu_{i0} = 0$
 
 
 ---
@@ -81,7 +89,7 @@ This can include a tie-breaker.
 - Two people with the exact same exam score.
 - Priorities are intervals of exam scores (Harvard admits SAT>1400)
 
-Researcher knows the mechanism and the priority. 
+**Researcher knows the mechanism and the priority.** 
 
 ---
 ### Student Proposing Deferred Acceptance
@@ -145,7 +153,8 @@ To learn about preferences outside of choice set, we need to assume that prefere
 
 
 ---
-### Fack et al (2019)
+### Using stability 
+##### Fack et al (2019)
 
 Paris high school uses a DA. 
 
@@ -187,11 +196,13 @@ $$\mathbf{L}_{R_i} = \int \Phi(R_i,R_{-i}) \prod_{i'\ne i} \sigma_{R_{i'}}(\nu_{
 
 where $\Phi$ is the assignment and $\sigma(\nu)$ is the prob that agent with list utility $\nu$ submits list $R$.
 
-By varying their $R$, and agent can implicitly choose different assignment probabilities.
+
 
 
 ---
 ### BNE Framework II
+
+By varying their $R$, an agent can implicitly choose different assignment probabilities.
 
 Expected utility is $\nu_i \cdot L_{R_i}$. 
 
@@ -236,4 +247,6 @@ $C_R^*$ is when $R$ is the only ratinalizable report.
 ---
 ### Next Class
 
-LaVerde (2020)
+Mariana LaVerde (wp) 
+
+*"Distance to Schools and Equal Access in School Choice Systems"*
