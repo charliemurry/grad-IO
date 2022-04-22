@@ -1,36 +1,36 @@
 ---
-title: "ps2"
+title: "Problem Set - 2"
 output: pdf_document
 ---
 
 ## Problem Set 3: Endogenous Trucks
 
-Date assigned: April 1, 2022.  
-Date due: April 15, 2022.
+Date assigned: April 19, 2022.  
+Date due: May 5, 2022.
 
 The data is in trucks.csv. It is a slice from the dataset from the paper ```The Evolution of Market Power in the U.S. Automobile Industry``` by Paul Grieco, Charlie Murry, and Ali Yurukoglu. It includes all of the "trucks" offered for sale in the U.S. from 1980 to 2018. 
 
 
-```make``` Make of car (ex. Honda).  
-```model``` Make and model of car (ex. Honda Accord).
-```parent``` Ultimate owner/manufacturer (ex. VW owns VW and Audi and Porsche).
-```sales``` Sales.  
+```make``` Make of car (ex. Honda).\
+```model``` Make and model of car (ex. Honda Accord).\
+```parent``` Ultimate owner/manufacturer (ex. VW owns VW and Audi and Porsche).\
+```sales``` Sales.\
 ```msrp``` Price.  
 ```curbweight``` weight of car with no passengers or cargo.  
 ```footprint``` width multiplied by length in square inches.  
 ```hp``` horsepower of car.  
-```mpg``` Fuel economy rating of the car.
+```mpg``` Fuel economy rating of the car.\
 ```marketsize``` scaled number of households in U.S.  
 ```yearssincedesign``` Number of years since the last styling redesign of the truck. Zero = the first year of the new design.   
 
 The goal of the problem set it to estimate the fixed costs of redesigning a truck. In practice, vehicles are redesigned roughly every 5-7 years, and this includes a change to the styling and update to mechanical components.  
 
 
-### 1. Data description. 
+### 1. Descriptive Statistics. 
 
-(i) How many years pass, on average, between re-design?
-(ii) Present graphical reduced form evidence that redesign increases sales (or doesn't).
-(ii) Plot the number of models and number of redesigns per year. 
+(i) How many years pass, on average, between re-design?\
+(ii) Present graphical reduced form evidence that redesign increases sales (or doesn't).\
+(iii) Plot the number of models and number of redesigns per year. 
 
 
 ### 2. Estimate demand for trucks. 
@@ -41,7 +41,7 @@ $$
 u_{ijt} = X_{jt} β + αp_{jt} + ξ_{jt} + ε_{jt}
 $$
 
-where $X$ includes ```log(cubweight)```, ```log(footprint)```, ```log(hp)```, and ```yearssincedesign```, ```log(mpg)```, as well as ```make``` dummies and ```year``` dummies. You can estimste the parameters of this model using OLS -- see Berry (1994) for details if you do not recall from IO I. (Typically, we would need to IV for price, but here the make and year dummies seem to do a decent job and getting us "reasonable" estimates of elasticities, so lets just stick with this empirical strategy.)
+where $X$ includes ```log(cubweight)```, ```log(footprint)```, ```log(hp)```, ```yearssincedesign```, ```log(mpg)```, as well as ```make``` and ```year``` dummies. Assume that $ε_{jt}$ is T1EV. You can estimate the parameters of this model using OLS -- see Berry (1994) for details if you do not recall from IO I. (Typically, we would need to instrument for price, but here the make and year dummies seem to do a decent job in getting us "reasonable" estimates of elasticities, so lets just stick with this empirical strategy.)
 
 i. Report the coefficients in a table.  
 ii. Report the average own-price elasticity of demand.  
@@ -53,7 +53,7 @@ $$
 log(mc_{jt}) = Z_{jt} γ +  ω_{jt}
 $$
 
-and also include make and year effects, like in demand. $Z$ should include everything in X except ```yearssincedesign```. 
+and also include make and year fixed effects, like in demand. $Z$ should include everything in X except ```yearssincedesign```. 
 
 i. Report the results. 
 
@@ -63,7 +63,7 @@ Eizenberg (2014) uses a revealed preference approach to estimate fixed cost boun
 <!-- The idea is that given every other choice (by all other firms in period t and in all other periods), a parent firm has no profitable single deviation.  -->
 In this section we will use the same approach to estimate fixed cost bounds for redesigning a truck.  
 
-If a firm chooses to redesign a truck j in year t, the following necessary condition must hold:
+If a firm chooses to redesign a truck $j$ in year $t$, the following necessary condition must hold:
 
 $$
 \mathbb{E}π_{jt}(R_{jt}=0;X,p,R_{-jt}, \gamma, \alpha, \beta)  \leq \mathbb{E}π_{jt}(R_{jt}=1;X,p,R_{-jt},  \gamma, \alpha, \beta) - F_{jt}
@@ -74,14 +74,20 @@ $R_{jt}$ is the decision to redesign truck j at time t, and $R_{-jt}$ has the re
 Use the following specification for fixed costs, which is analogous to Eizenberg's specification.
 
 $$
-F_{jt} = F^{(f)} + e_{jt}
+F_{jt} = F^{f} + \nu_{jt}
 $$
-
+where $f$ is the parent firm.\
 Some suggestions. 
 
-1. Don't use too many draws of $\xi$ and $\omega$.
+1. Don't use too many draws of $\xi$ and $\omega$ when computing expectations.
 2. Make sure you recompute pricing equilibrium for deviations. 
-3. Use deviations that involve a single year. For example, if a truck was redesigned in 2014, use 2013 as a deviation. 
+3. Use deviations that involve a single year. For example, 
+   1. If a truck was redesigned in 2014, use redesign in 2013 or 2015 as a deviation.[^1]  
+   2. If a truck was not redesigned in 2014, use redesign in 2014 without change in product characteristic as a deviation.
+
+
+
+[^1]: Note that, while considering redesign in 2013, you would be changing only the ```yearssincedesign``` variable in 2014 from 0 to 1 and not any other $X$s. While considering redesign in 2015, you would be changing ```yearssincedesign``` in 2014 from 0 to `yearssincedesign`_2013 + 1. You would also be changing other $X$s to the ones in 2013, that is, $X_2014 = X_2013.
 
 <!-- If truck $j$ from firm $f$ is redesigned in year $t$, estimate $\bar{F}_{jt}$ in the following steps:  
 
@@ -101,7 +107,7 @@ $$
 F_{jt} =  F + \nu_{jt}
 $$   -->
 
-Note that there is a selection problem, i.e. conditional on observed decisions, $E(\nu_{jt}) \neq 0$. Because of this, you cannot use the mean of estimated $\bar{F}_{jt}$s to estimate $\bar{F}$, and the mean of estimated $\underline{F}_{jt}$s to estimate $\underline{F}$. Solve this selection problem as in Eizenberg (2014) to estimate $\bar{F}$ and $\underline{F}$. 
+Note that there is a selection problem, i.e. conditional on observed decisions, $E(\nu_{jt}) \neq 0$. Because of this, you cannot use the mean of estimated $\bar F_{jt}$ to estimate $\bar{F}$, and the mean of estimated $\underline{F}_{jt}$ to estimate $\underline{F}$. Solve this selection problem as in Eizenberg (2014) to estimate $\bar{F}$ and $\underline{F}$. 
 
 (i) Report your upper and lower bounds. You do not need report confidence intervals, as in Eizenberg (2014) eq. (14). 
 
@@ -110,3 +116,7 @@ Note that there is a selection problem, i.e. conditional on observed decisions, 
 (iii) Consider that in reality all truck manufacturers always redesigned as quickly as possible? In other words, the option to redesign 1 year earlier is not a feasible option and cannot be used to estimate $\bar{F}$. How would that change your results? Are there additional issues that arise?
 
 (iv) Without recomputing anything, explain how your results would change if there was a large random coefficient on the dummy variable for ```U.S. Brand```?
+
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });</script>

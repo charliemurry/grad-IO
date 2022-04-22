@@ -3,7 +3,7 @@ This repository contains the readings and problems set for the Murry half (secon
 
 Problem Set 1 is due on XX @ 9am. 
 
-Problem Set 2 is due on XX @ 9am. 
+Problem Set 2 is due on May 5. 
 
 
 ## Class Schedule
@@ -28,15 +28,15 @@ Problem Set 2 is due on XX @ 9am.
 
 ##### 4/8 Finish Endogenous Products and Empirical Matching
 - Ciliberto, Murry, and Tamer (2020)
+
+##### 4/21
 - Agarwal and Somani (2020)
-
-
-<!-- ##### Week of 4/26 Empirical Matching Markets and Market Design
 - Laverde (wp)
-- Bhattacharya (2021) -->
 
+##### 4/28
+- Anderson and Coate (2005)
+- TBD
 
-<!-- ##### Week of 5/1 -- TBD (Advanced Demand? / Dynamic Games?) -->
 
 
 
