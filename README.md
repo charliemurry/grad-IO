@@ -7,35 +7,36 @@ Problem Set 2 is due on May 5.
 
 
 ## Class Schedule
-
-#### Production Functions
 (See *References* for paper abbreviations.)
 
-##### 3/17 -- Production functions: Intro, OP and LP, and ACF
-- Notation from ACF.  
+##### 3/17 -- Production functions 
+- Intro, OP and LP, and ACF
+- *(Notation from ACF)*  
 
-#### Production Functions and Market Power
+##### 3/25 -- Production Functions and Market Power
+- DeLoecker and Warzynski (2012); DeLoecker, Echout, Unger (2020)
+- Berry, Gaynor, Scott Morton (2019); Demsetz (1973)
+- Grieco, Murry, Yurukoglu (wp)
+- **Problem Set 1 -- Posted on Github Repo.** 
 
-##### 3/25 -- Berry, Gaynor, Scott Morton (2019); Demsetz (1973); DeLoecker and Warzynski (2012); DeLoecker, Echout, Unger (2020)
-##### Problem Set -- Posted on Github Repo. 
-
-#### Endogenous Products
+#### Endogenous Products and Competition
 #####  4/1 -- Radio and PCs
 - Mankiw and Whinston (1986 RAND)
 - Berry and Waldfogel (1999 RAND) 
-<!-- - Berry and Waldfogel (2001 QJE)  -->
+- Berry and Waldfogel (2001 QJE) 
 - Eizenberg (2014) 
 
-##### 4/8 Finish Endogenous Products and Empirical Matching
+##### 4/8 More Endogenous Products + Dynamic Games
 - Ciliberto, Murry, and Tamer (2020)
+- BBL (2007) + others
 
-##### 4/21
+##### 4/21 Empirical Matching
 - Agarwal and Somani (2020)
 - Laverde (wp)
 
 ##### 4/28
 - Anderson and Coate (2005)
-- TBD
+- Gentzkow, Shapiro, Yang, Yurukoglu (wp)
 
 
 
