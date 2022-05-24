@@ -114,7 +114,17 @@ Sophia Li, Joe Mazur, James Roberts, Yongjoon Park and Jun Zhang. "Endogenous an
 Jorge Balat and Sukjin Han. ["Multiple Treatments with Strategic Interaction"](https://drive.google.com/open?id=1J1tvtrtJuWSwi5wBlrsxajGfqJ-XUcz4), working paper 2018. 
 
 
-### Advanced Demand Estimation
+### Empirics of Matching Markets (this is a very incomplete list)
+
+\* Agarwal, Nikhil, and Paulo Somaini. "Revealed preference analysis of school choice models." Annual Review of Economics 12 (2020): 471-501. 
+
+Agarwal, Nikhil, and Paulo Somaini. "Demand analysis using strategic reports: An application to a school choice mechanism." Econometrica 86, no. 2 (2018): 391-444.
+
+\* Laverde, Mariana. Distance to Schools and Equal Access in School Choice Systems. No. 2022-002. 2022.
+
+
+
+<!-- ### Advanced Demand Estimation
 
 \* Georee, M. S. (2008). Limited Information and Advertising in the U.S. Personal Computer Industry. Econometrica, 76(5), 1017–1074. https://doi.org/10.3982/ecta4158
 
@@ -122,7 +132,7 @@ Grieco, Paul, Charles Murry, Joris Pinkse, Stephan Sagl. Efficient Estimation of
 
 Crawford, G., & Yurukoglu, A. (2016). The Welfare Effects of Bundling in Multichannel Television Markets. American Economic Review, 102(2), 643–685.
 
-Wildenbeest et al.
+Wildenbeest et al. -->
 
 
 ### Dynamics and Strategic Interactions
