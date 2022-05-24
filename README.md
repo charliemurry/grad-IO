@@ -17,7 +17,7 @@ Problem Set 2 is due on May 5.
 - DeLoecker and Warzynski (2012); DeLoecker, Echout, Unger (2020)
 - Berry, Gaynor, Scott Morton (2019); Demsetz (1973)
 - Grieco, Murry, Yurukoglu (wp)
-- **Problem Set 1 -- Posted on Github Repo.** 
+- **Problem Set 1, Production Functions, Posted on Github Repo.** 
 
 #### Endogenous Products and Competition
 #####  4/1 -- Radio and PCs
@@ -29,6 +29,7 @@ Problem Set 2 is due on May 5.
 ##### 4/8 More Endogenous Products + Dynamic Games
 - Ciliberto, Murry, and Tamer (2020)
 - BBL (2007) + others
+- **Problem Set 2, Endogenous Products, Posted on Github**
 
 ##### 4/21 Empirical Matching
 - Agarwal and Somani (2020)
